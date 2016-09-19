@@ -6,11 +6,11 @@ class Graph(object):
 
     def __init__(self, name='Sans nom'):
         self.__name = name
-        self.__nodes = []   # Attribut prive.
+        self.__adj = {} # Matrice d'adjacence
 
     def add_node(self, node):
         "Ajoute un noeud au graphe."
-        self.__nodes.append(node)
+        self.__adj
 
     def get_name(self):
         "Donne le nom du graphe."
@@ -39,6 +39,6 @@ if __name__ == '__main__':
 
     G = Graph(name='Graphe test')
     for k in range(5):
-        G.add_node(Node(name='Noeud test %d' % k))
+        G.add_node(Node(name='Noeud teste %d' % k))
 
     print G
