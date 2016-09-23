@@ -1,5 +1,5 @@
 class Graph(object):
-    """
+     """
     Une classe generique pour representer un graphe comme un ensemble de
     noeuds.
     """
@@ -10,7 +10,21 @@ class Graph(object):
 
     def add_node(self, node):
         "Ajoute un noeud au graphe."
-        self.__adj
+        self.__adj.setdefault(node,{None : None})
+
+    def add_edge(self, edge):
+        "Ajoute une arete au graphe."
+        (n1,n2) = edge.get_nodes()
+        if n1 in self.__adj.keys():
+            self.__adj[n1][n2] = edge
+        else:
+            self.add_node(n1)
+            self.__adj[n1] = {n2,edge}
+        if n2 in self.__adj.keys():
+            self.__adj[n2][n1] = edge
+        else:
+            self.add_node(n2)
+            self.__adj[n2] = {n1,edge}
 
     def get_name(self):
         "Donne le nom du graphe."
@@ -18,11 +32,21 @@ class Graph(object):
 
     def get_nodes(self):
         "Donne la liste des noeuds du graphe."
-        return self.__nodes
+        return self.__adj.keys()
 
     def get_nb_nodes(self):
         "Donne le nombre de noeuds du graphe."
-        return len(self.__nodes)
+        if self.__adj == {}:
+            return 0
+        # else access random element and get node count
+        else return self.__adj.iterkeys().next().get_count()
+
+    def get_edges(self):
+        "Donne la liste des aretes du graphe."
+        edges = []
+        edges.extend([v for n in self.get_nodes() for v in self.__adj[node].values()])
+        return list(set(edges)) # removing doubles
+
 
     def __repr__(self):
         name = self.get_name()
