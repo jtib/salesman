@@ -5,7 +5,7 @@ class Edge(object):
 
     __edge_count = -1 # Compteur global partage par toutes les instances.
 
-    def __init__(self, node1 = Node(), node2 = Node(), weight = 0):
+    def __init__(self, node1, node2, weight = 0):
       self.__nodes = (node1, node2)
       self.__weight = weight
       Edge.__edge_count += 1
@@ -27,15 +27,19 @@ class Edge(object):
         id = self.get_id()
         weight = self.get_weight()
         nodes = self.get_nodes()
-        s  = 'Arete {i} (poids : {p})'.format(i = id, p = weight)
-        s += '(noeuds : ' + repr(nodes[0]) + ',' + repr(nodes[1])
+        s  = 'Arete {i} (poids : {p}) '.format(i = id, p = weight)
+        s += '(noeuds : ' + repr(nodes[0]) + ', ' + repr(nodes[1])
         return s
 
 if __name__ == '__main__':
 
+    from node import Node
+    n1 = Node()
+    n2 = Node()
+
     aretes = []
     for k in xrange(5):
-        aretes.append(Edge())
+        aretes.append(Edge(node1 = n1, node2 = n2))
 
     for arete in aretes:
         print arete
