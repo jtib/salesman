@@ -1,5 +1,10 @@
 ## MTH6412B - Project
-#### A solution to the travelling salesman problem
+### A solution to the travelling salesman problem
+
+##### Notes sur les remises :
+* remettre un fichier pdf (le rapport) et une archive zip (pas d'autre format de compression) contenant le code
+* deuxième chose : avoir un programme principal à faire tourner pour pouvoir reproduire les résultats inscrits dans le rapport. Les résultats doivent bien sûr être les mêmes, et surtout ne pas faire de choses stupides comme inventer des résultats sans le code qui correspond... Prévenir dans le rapport si telle ou telle chose ne marche pas + écrire ce qui a été essayé.
+* Le code déjà remis peut être modifié plus tard dans le projet.
 
 ##### Lab 0
 * mail Maxime : maxime.mcl@gmail.com
