@@ -10,21 +10,21 @@ class Graph(object):
 
     def add_node(self, node):
         "Ajoute un noeud au graphe."
-        self.__adj.setdefault(node,{None : None})
+        self.__adj.setdefault(node,{})
 
     def add_edge(self, edge):
         "Ajoute une arete au graphe."
-        (n1,n2) = edge.get_nodes()
-        if n1 in self.__adj.keys():
-            self.__adj[n1][n2] = edge
-        else:
-            self.add_node(n1)
-            self.__adj[n1] = {n2:edge}
-        if n2 in self.__adj.keys():
-            self.__adj[n2][n1] = edge
-        else:
-            self.add_node(n2)
-            self.__adj[n2] = {n1:edge}
+        (n1, n2) = edge.get_nodes()
+        # retrieving nodes from ids
+        nodes = [node for node in self.__adj.keys() if node.get_id() == n1\
+                or node.get_id() == n2]
+        # if both nodes already there
+        if len(nodes) == 2:
+            self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
+                    = edge
+        # if only one is there or none are (shouldn't happen)
+        elif len(nodes) < 2:
+            raise KeyError("Missing node(s). Add all nodes before adding edges")
 
     def get_name(self):
         "Donne le nom du graphe."
@@ -55,14 +55,12 @@ class Graph(object):
         else:
             # this is a subdictionary
             sd = self.__adj.itervalues().next()
-            print type(sd)
-            # this is an edge
-            e = sd.itervalues().next()
-            print e
             # there might not be any edges yet
-            if e == None:
+            if sd == {}:
                 return 0
             else:
+                # this is an edge
+                e = sd.itervalues().next()
                 return e.get_count()+1
 
     def __repr__(self):
@@ -83,10 +81,13 @@ if __name__ == '__main__':
     from edge import Edge
 
     G = Graph(name='Graphe test')
+    count = 0
     for k in range(5):
         #G.add_node(Node(name='test %d' % k))
-        n1 = Node(name='test')
-        n2 = Node(name='test')
-        G.add_edge(Edge(n1,n2,weight=42))
+        n1 = count
+        count += 1
+        n2 = count
+        count += 1
+        G.add_edge(Edge(n1, n2, weight=42))
 
     print G

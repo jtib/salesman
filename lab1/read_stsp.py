@@ -130,17 +130,17 @@ def read_edges(header, fd):
                 for j in xrange(start, start + n_on_this_line):
                     n_edges += 1
                     if edge_weight_format in ['UPPER_ROW', 'LOWER_COL']:
-                      edge = (k, i+k+1, data[j])
+                      edge = (k, i+k+1, int(data[j]))
                     elif edge_weight_format in ['UPPER_DIAG_ROW', \
                                                 'LOWER_DIAG_COL']:
-                        edge = (k, i+k, data[j])
+                        edge = (k, i+k, int(data[j]))
                     elif edge_weight_format in ['UPPER_COL', 'LOWER_ROW']:
-                        edge = (i+k+1, k, data[j])
+                        edge = (i+k+1, k, int(data[j]))
                     elif edge_weight_format in ['UPPER_DIAG_COL', \
                                                 'LOWER_DIAG_ROW']:
-                        edge = (i, k, data[j])
+                        edge = (i, k, int(data[j]))
                     elif edge_weight_format == 'FULL_MATRIX':
-                        edge = (k, i, data[j])
+                        edge = (k, i, int(data[j]))
                     edges.add(edge)
                     i += 1
 
