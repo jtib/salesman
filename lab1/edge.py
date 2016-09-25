@@ -34,7 +34,7 @@ class Edge(object):
         weight = self.get_weight()
         nodes = self.get_nodes()
         s  = 'Arete {i} (poids : {p}) '.format(i = id, p = weight)
-        s += '(noeuds : ' + repr(nodes[0]) + ', ' + repr(nodes[1])
+        s += '(noeuds : ' + repr(nodes[0]) + ', ' + repr(nodes[1]) + ')'
         return s
 
 

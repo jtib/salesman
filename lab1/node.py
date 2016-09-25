@@ -23,6 +23,10 @@ class Node(object):
         "Donne les donnees contenues dans le noeud."
         return self.__data
 
+    def get_count(self):
+        "Donne le nombre de noeuds ajoutes au graphe."
+        return Node.__node_count
+
     def __repr__(self):
         id = self.get_id()
         name = self.get_name()
