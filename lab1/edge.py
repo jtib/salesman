@@ -50,7 +50,7 @@ if __name__ == '__main__':
     from node import Node
     aretes = []
     for k in xrange(5):
-        aretes.append(Edge(node1 = 0, node2 = 1))
+        aretes.append(Edge(node_id1 = 0, node_id2 = 1))
     for arete in aretes:
         print arete
 
