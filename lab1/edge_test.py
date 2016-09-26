@@ -1,3 +1,4 @@
+
 from node import Node
 from edge import EdgeException
 from edge import Edge
@@ -6,6 +7,9 @@ from edge import Edge
 import unittest
 
 class TestEdge(unittest.TestCase):
+    """
+    Classe de tests unitaires de la classe Edge
+    """
 
     def setUp(self):
         node1 = Node()
