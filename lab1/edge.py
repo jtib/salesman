@@ -5,7 +5,7 @@ class Edge(object):
     __edge_count = -1 # Compteur global partage par toutes les instances.
 
     def __init__(self, node_id1, node_id2, weight = 0):
-      if node_id1 == node_id2:
+      if node_id1 == node_id2 and weight != 0:
           raise EdgeException('Une arete ne peut pas pointer sur elle-meme.')
       else:
         self.__nodes = (node_id1, node_id2)
