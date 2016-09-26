@@ -22,6 +22,8 @@ if __name__ == "__main__":
         G = Graph(name='Graphe')
 
         # add nodes to graph
+        if len(nodes) == 0:
+            nodes = {k:None for k in xrange(dim)}
         for node in nodes.items():
             # node id
             n = node[0]

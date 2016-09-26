@@ -1,3 +1,5 @@
+from node import Node
+
 class Graph(object):
     """
     Une classe generique pour representer un graphe comme un ensemble de
@@ -22,9 +24,10 @@ class Graph(object):
         if len(nodes) == 2:
             self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
                     = edge
-        # if only one is there or none are (shouldn't happen)
-        elif len(nodes) < 2:
-            raise KeyError("Missing node(s). Add all nodes before adding edges")
+        # if only one is there and it doesn't point at itself, or none are
+        elif len(nodes) < 2 and n1 != n2:
+            raise KeyError("Missing node(s). Add all nodes before adding edges\
+                (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1, n2))
 
     def get_name(self):
         "Donne le nom du graphe."
