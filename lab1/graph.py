@@ -76,18 +76,16 @@ class Graph(object):
 
 
 if __name__ == '__main__':
-
     from node import Node
     from edge import Edge
-
     G = Graph(name='Graphe test')
     count = 0
     for k in range(5):
-        #G.add_node(Node(name='test %d' % k))
+        G.add_node(Node(name='test %d' % count))
         n1 = count
         count += 1
+        G.add_node(Node(name='test %d' % count))
         n2 = count
         count += 1
         G.add_edge(Edge(n1, n2, weight=42))
-
     print G
