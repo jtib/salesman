@@ -23,7 +23,7 @@ class TestEdge(unittest.TestCase):
     def test_init(self):
         node = Node()
         with self.assertRaises(EdgeException):
-            edge = Edge(node,node)
+            edge = Edge(node,node,1)
 
 
 
