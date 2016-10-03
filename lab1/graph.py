@@ -17,12 +17,15 @@ class Graph(object):
         self.__adj.setdefault(node,{})
         self.__nodes += 1
 
+    def retrieve_nodes_from_id(self, *ids):
+        return [node for node in self.__adj.keys()
+                if node.get_id() in ids]
+
     def add_edge(self, edge):
         "Ajoute une arete au graphe."
         (n1, n2) = edge.get_nodes()
-        # retrieving nodes from ids
-        nodes = [node for node in self.__adj.keys() if node.get_id() == n1\
-                or node.get_id() == n2]
+        # retrieving nodes
+        nodes = self.retrieve_nodes_from_id(n1.get_id(), n2.get_id())
         # if both nodes already there
         if len(nodes) == 2:
             self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
@@ -31,7 +34,7 @@ class Graph(object):
         # if only one is there and it doesn't point at itself, or none are
         elif len(nodes) < 2 and n1 != n2:
             raise KeyError("Missing node(s). Add all nodes before adding edges\
-                (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1, n2))
+                (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1.get_id(), n2.get_id()))
 
     def get_name(self):
         "Donne le nom du graphe."
@@ -73,11 +76,11 @@ if __name__ == '__main__':
     G = Graph(name='Graphe test')
     count = 0
     for k in range(5):
-        G.add_node(Node(name='test %d' % count))
-        n1 = count
+        n1 = Node(iden=count, name='test %d' % count)
+        G.add_node(n1)
         count += 1
-        G.add_node(Node(name='test %d' % count))
-        n2 = count
+        n2 = Node(iden=count, name='test %d' % count)
+        G.add_node(n2)
         count += 1
-        G.add_edge(Edge(n1, n2, weight=42))
+        G.add_edge(Edge(k, n1, n2, weight=42))
     print G

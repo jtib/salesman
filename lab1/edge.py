@@ -2,19 +2,17 @@ class Edge(object):
     """
     Une classe generique pour representer les aretes d'un graphe.
     """
-    #__edge_count = -1 # Compteur global partage par toutes les instances.
 
-    def __init__(self, iden, node_id1, node_id2, weight = 0):
-      if node_id1 == node_id2 and weight != 0:
+    def __init__(self, iden, node1, node2, weight = 0):
+      if node1.get_id() == node2.get_id() and weight != 0:
           raise EdgeException('Une arete ne peut pas pointer sur elle-meme.')
       else:
-        self.__nodes = (node_id1, node_id2)
+        self.__nodes = (node1, node2)
         self.__weight = weight
-        #Edge.__edge_count += 1
         self.__id = iden
 
     def get_nodes(self):
-        "Donne les identifiants des noeuds."
+        "Donne les noeuds."
         return self.__nodes
 
     def get_weight(self):
@@ -45,8 +43,10 @@ class EdgeException(Exception):
 if __name__ == '__main__':
     from node import Node
     aretes = []
+    n1 = Node(iden=0)
+    n2 = Node(iden=1)
     for k in xrange(5):
-        aretes.append(Edge(iden = k, node_id1 = 0, node_id2 = 1))
+        aretes.append(Edge(iden = k, node1=n1, node2=n2))
     for arete in aretes:
         print arete
 

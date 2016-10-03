@@ -38,10 +38,13 @@ if __name__ == "__main__":
         nb_edges = sum(xrange(dim))
         for (e, edge) in zip(xrange(nb_edges), edges):
             # nodes
-            (n1, n2) = (edge[0], edge[1])
+            (nid1, nid2) = (edge[0], edge[1])
+            node_list = G.retrieve_nodes_from_id(nid1, nid2)
+            n1 = node_list[0]
+            n2 = node_list[0] if len(node_list)==1 else node_list[1]
             # weight
             w = edge[2]
             # edge id
-            G.add_edge(Edge(iden = e, node_id1=n1, node_id2=n2, weight=w))
+            G.add_edge(Edge(iden = e, node1=n1, node2=n2, weight=w))
 
         print G
