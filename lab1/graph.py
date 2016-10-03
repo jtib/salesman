@@ -30,7 +30,7 @@ class Graph(object):
         if len(nodes) == 2:
             self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
                     = edge
-            self.__edges = edge.get_id() + 1
+            self.__edges = edge.get_id() + 1 #valid for all tsps, avoids has_key
         # if only one is there and it doesn't point at itself, or none are
         elif len(nodes) < 2 and n1 != n2:
             raise KeyError("Missing node(s). Add all nodes before adding edges\
