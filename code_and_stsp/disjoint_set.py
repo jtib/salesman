@@ -60,8 +60,8 @@ class DisjointSet(object):
         "Affiche les identifiants des noeuds jusqu'a la racine"
         s = '%d' % self.__node.get_id()
         if self.__parent == None:
-            return s
-        s += ', ' + str(self.__parent)
+            return s + " = racine."
+        s += ' --> ' + str(self.__parent)
         return s
 
 
@@ -79,8 +79,11 @@ if __name__ == '__main__':
 
     # On affiche la racine de set1
     print set1.find_root()
-
-    # On unit les deux ensembles et on verifie le booleen de sortie
+    
+    # On essaye d'unir deux membres d'un meme ensemble
+    print set1.union_sets(set2)
+    
+    # On unit deux ensembles disjoints et on verifie le booleen de sortie
     print set1.union_sets(set3)
     # On affiche les trois sous-ensembles initiaux
     print set1, set2, set3
