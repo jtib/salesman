@@ -28,7 +28,7 @@ class DisjointSet(object):
     def parent(self,val):
         "Modification du parent"
         # Mettre les verifications
-        if self.__parent == node:
+        if self.__parent == None:
             self.__parent = val
         #A compléter
 
