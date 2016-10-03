@@ -35,3 +35,12 @@ complet à chaque fois... donc mieux d'avoir un compteur)
 doivent être résolus, donc ne pas s'occuper des coordonnées (qui ne servent
 éventuellement que pr l'affichage)
 * add_edge et adjacence (matrice) (étendre classe edge)
+
+##### Lab 2
+* respecter le guide de style
+* exemples dans livre Cormen pour prochain lab
+* méthodes en petites capitales dans instructions
+* possibilités : faire une classe DisjointSet et lui ajouter les méthodes en question,
+ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthodes (ce qui élimine un objet mais est moins rigoureux)
+* 23.2 - The algorithms of Kruskal and Prim (p.631)
+* représentation visuelle des graphes : utile pour le débogage
