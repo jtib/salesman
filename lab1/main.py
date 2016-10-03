@@ -21,6 +21,9 @@ if __name__ == "__main__":
         # create Graph
         G = Graph(name='Graphe')
 
+        # convert dim
+        dim = int(dim)
+
         # add nodes to graph
         if len(nodes) == 0:
             nodes = {k:None for k in xrange(dim)}
@@ -29,14 +32,16 @@ if __name__ == "__main__":
             n = node[0]
             # node data
             d = node[1]
-            G.add_node(Node(name='Noeud {}'.format(n), data=d))
+            G.add_node(Node(iden = n, name='Noeud {}'.format(n), data=d))
 
         # add edges to graph
-        for edge in edges:
+        nb_edges = sum(xrange(dim))
+        for (e, edge) in zip(xrange(nb_edges), edges):
             # nodes
             (n1, n2) = (edge[0], edge[1])
             # weight
             w = edge[2]
-            G.add_edge(Edge(node_id1=n1, node_id2=n2, weight=w))
+            # edge id
+            G.add_edge(Edge(iden = e, node_id1=n1, node_id2=n2, weight=w))
 
         print G

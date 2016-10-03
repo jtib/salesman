@@ -9,10 +9,13 @@ class Graph(object):
     def __init__(self, name='Sans nom'):
         self.__name = name
         self.__adj = {} # Matrice d'adjacence
+        self.__edges = 0
+        self.__nodes = 0
 
     def add_node(self, node):
         "Ajoute un noeud au graphe."
         self.__adj.setdefault(node,{})
+        self.__nodes += 1
 
     def add_edge(self, edge):
         "Ajoute une arete au graphe."
@@ -24,6 +27,7 @@ class Graph(object):
         if len(nodes) == 2:
             self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
                     = edge
+            self.__edges = edge.get_id() + 1
         # if only one is there and it doesn't point at itself, or none are
         elif len(nodes) < 2 and n1 != n2:
             raise KeyError("Missing node(s). Add all nodes before adding edges\
@@ -39,11 +43,7 @@ class Graph(object):
 
     def get_nb_nodes(self):
         "Donne le nombre de noeuds du graphe."
-        if self.__adj == {}:
-            return 0
-        # else access random element and get node count
-        else:
-            return self.__adj.iterkeys().next().get_count()+1
+        return self.__nodes
 
     def get_edges(self):
         "Donne la liste des aretes du graphe."
@@ -53,18 +53,7 @@ class Graph(object):
 
     def get_nb_edges(self):
         "Donne le nombre d'aretes du graphe."
-        if self.__adj == {}:
-            return 0
-        else:
-            # this is a subdictionary
-            sd = self.__adj.itervalues().next()
-            # there might not be any edges yet
-            if sd == {}:
-                return 0
-            else:
-                # this is an edge
-                e = sd.itervalues().next()
-                return e.get_count()+1
+        return self.__edges
 
     def __repr__(self):
         name = self.get_name()

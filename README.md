@@ -44,3 +44,6 @@ doivent être résolus, donc ne pas s'occuper des coordonnées (qui ne servent
 ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthodes (ce qui élimine un objet mais est moins rigoureux)
 * 23.2 - The algorithms of Kruskal and Prim (p.631)
 * représentation visuelle des graphes : utile pour le débogage
+* utiliser les nodes et pas les id dans les aretes (nooon...)
+* mettre des décorateurs
+* inclure dossier stsp dans .zip

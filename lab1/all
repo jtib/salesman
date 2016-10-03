@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for f in ./stsp/*
+  do
+    filename=$(basename "$f")
+    file=`(echo "${filename%.*}.txt")`
+    python ./main.py $f > ./results/$file
+  done
