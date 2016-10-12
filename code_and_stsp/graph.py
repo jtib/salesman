@@ -1,4 +1,5 @@
 from node import Node
+from disjoint_set import DisjointSet
 
 class Graph(object):
     """
@@ -32,12 +33,12 @@ class Graph(object):
 
     def get_nb_nodes(self):
         "Donne le nombre de noeuds du graphe."
-        return self.__nodes
+        return len(self.get_nodes())
 
 
     def get_nb_edges(self):
         "Donne le nombre d'aretes du graphe."
-        return self.__edges
+        return len(self.get_edges())
 
 
     def retrieve_nodes_from_id(self, *ids):
@@ -73,6 +74,12 @@ class Graph(object):
         edges = self.get_edges()
         edges.sort(key=lambda edge: edge.get_weight())
         return edges
+
+
+    def sets_from_nodes(self):
+        "Renvoie les DisjointSet formes a partir des noeuds."
+        nodes = self.get_nodes()
+        return {DisjointSet(node) for node in nodes}
 
 
     def __repr__(self):
