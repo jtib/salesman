@@ -23,6 +23,14 @@ class Edge(object):
         "Donne l'identifiant."
         return self.__id
 
+    def __le__(self, other_edge):
+        "Inferieur ou egal : comparaison en fonction du poids"
+        return self.__weight <= other_edge.get_weight()
+
+    def __lt__(self, other_edge):
+        "Inferieur ou egal : comparaison en fonction du poids"
+        return self.__weight < other_edge.get_weight()
+
     def __repr__(self):
         id = self.get_id()
         weight = self.get_weight()
@@ -31,11 +39,9 @@ class Edge(object):
         s += '(noeuds : {0}, {1})'.format(nodes[0], nodes[1])
         return s
 
-
 class EdgeException(Exception):
     def __init__(self, reason):
         self.__reason = reason
-
     def __str__(self):
         return self.__reason
 
@@ -49,6 +55,7 @@ if __name__ == '__main__':
         aretes.append(Edge(iden = k, node1=n1, node2=n2))
     for arete in aretes:
         print arete
+
 
 
 
