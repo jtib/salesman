@@ -36,7 +36,7 @@ class Edge(object):
         weight = self.get_weight()
         nodes = self.get_nodes()
         s  = 'Arete {i} (poids : {p}) '.format(i = id, p = weight)
-        s += '(noeuds : {0}, {1})'.format(nodes[0], nodes[1])
+        s += '({0} <---> {1})'.format(nodes[0].get_id(), nodes[1].get_id())
         return s
 
 class EdgeException(Exception):

@@ -1,359 +1,360 @@
-85 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-23 --> 19 --> 151 --> 63 --> 101 = racine.
-115 --> 113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-45 --> 43 --> 41 --> 151 --> 63 --> 101 = racine.
-24 --> 33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-150 --> 149 --> 151 --> 63 --> 101 = racine.
-34 --> 33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-25 --> 24 --> 33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-94 --> 93 --> 91 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-55 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-26 --> 25 --> 24 --> 33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-27 --> 79 --> 151 --> 63 --> 101 = racine.
-140 --> 139 --> 141 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-10 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-28 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-178 --> 177 --> 171 --> 151 --> 63 --> 101 = racine.
-135 --> 132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-29 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-99 --> 100 --> 97 --> 101 = racine.
-116 --> 115 --> 113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-13 --> 14 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-149 --> 151 --> 63 --> 101 = racine.
-132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-35 --> 24 --> 33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-148 --> 154 --> 151 --> 63 --> 101 = racine.
-100 --> 97 --> 101 = racine.
-56 --> 55 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-79 --> 151 --> 63 --> 101 = racine.
-179 --> 171 --> 151 --> 63 --> 101 = racine.
-46 --> 45 --> 43 --> 41 --> 151 --> 63 --> 101 = racine.
-121 --> 79 --> 151 --> 63 --> 101 = racine.
-162 --> 160 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-117 --> 113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-101 = racine.
-131 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-57 --> 58 --> 151 --> 63 --> 101 = racine.
-128 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-80 --> 79 --> 151 --> 63 --> 101 = racine.
-130 --> 129 --> 131 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-122 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-160 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-36 --> 41 --> 151 --> 63 --> 101 = racine.
-175 --> 171 --> 151 --> 63 --> 101 = racine.
-102 --> 101 = racine.
-78 --> 77 --> 79 --> 151 --> 63 --> 101 = racine.
-158 --> 167 --> 166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-141 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-47 --> 36 --> 41 --> 151 --> 63 --> 101 = racine.
-18 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-37 --> 36 --> 41 --> 151 --> 63 --> 101 = racine.
-103 --> 101 = racine.
-171 --> 151 --> 63 --> 101 = racine.
-19 --> 151 --> 63 --> 101 = racine.
-154 --> 151 --> 63 --> 101 = racine.
-119 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-124 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-96 --> 107 --> 101 = racine.
-104 --> 103 --> 101 = racine.
-20 --> 19 --> 151 --> 63 --> 101 = racine.
-167 --> 166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-48 --> 59 --> 58 --> 151 --> 63 --> 101 = racine.
-133 --> 132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-105 --> 103 --> 101 = racine.
-38 --> 37 --> 36 --> 41 --> 151 --> 63 --> 101 = racine.
-21 --> 19 --> 151 --> 63 --> 101 = racine.
-161 --> 162 --> 160 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-63 --> 101 = racine.
-163 --> 171 --> 151 --> 63 --> 101 = racine.
-49 --> 58 --> 151 --> 63 --> 101 = racine.
-106 --> 105 --> 103 --> 101 = racine.
-129 --> 131 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-127 --> 128 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-22 --> 21 --> 19 --> 151 --> 63 --> 101 = racine.
-144 --> 154 --> 151 --> 63 --> 101 = racine.
-64 --> 63 --> 101 = racine.
-176 --> 175 --> 171 --> 151 --> 63 --> 101 = racine.
-98 --> 97 --> 101 = racine.
-107 --> 101 = racine.
-159 --> 160 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-39 --> 37 --> 36 --> 41 --> 151 --> 63 --> 101 = racine.
-142 --> 141 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-2 --> 0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-108 --> 171 --> 151 --> 63 --> 101 = racine.
-50 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-172 --> 171 --> 151 --> 63 --> 101 = racine.
-147 --> 148 --> 154 --> 151 --> 63 --> 101 = racine.
-87 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-155 --> 144 --> 154 --> 151 --> 63 --> 101 = racine.
-138 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-66 --> 63 --> 101 = racine.
-170 --> 169 --> 179 --> 171 --> 151 --> 63 --> 101 = racine.
-109 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-88 --> 87 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-12 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-168 --> 179 --> 171 --> 151 --> 63 --> 101 = racine.
-67 --> 63 --> 101 = racine.
-134 --> 133 --> 132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-110 --> 109 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-51 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-58 --> 151 --> 63 --> 101 = racine.
-145 --> 154 --> 151 --> 63 --> 101 = racine.
-40 --> 39 --> 37 --> 36 --> 41 --> 151 --> 63 --> 101 = racine.
-89 --> 87 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-59 --> 58 --> 151 --> 63 --> 101 = racine.
-60 --> 67 --> 63 --> 101 = racine.
-68 --> 67 --> 63 --> 101 = racine.
-77 --> 79 --> 151 --> 63 --> 101 = racine.
-61 --> 60 --> 67 --> 63 --> 101 = racine.
-62 --> 61 --> 60 --> 67 --> 63 --> 101 = racine.
-41 --> 151 --> 63 --> 101 = racine.
-151 --> 63 --> 101 = racine.
-111 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-1 --> 2 --> 0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-153 --> 154 --> 151 --> 63 --> 101 = racine.
-90 --> 89 --> 87 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-65 --> 66 --> 63 --> 101 = racine.
-118 --> 117 --> 113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-3 --> 0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-69 --> 67 --> 63 --> 101 = racine.
-30 --> 29 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-4 --> 3 --> 0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-177 --> 171 --> 151 --> 63 --> 101 = racine.
-52 --> 51 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-5 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-112 --> 111 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-42 --> 41 --> 151 --> 63 --> 101 = racine.
-6 --> 5 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-70 --> 69 --> 67 --> 63 --> 101 = racine.
-31 --> 29 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-143 --> 132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-91 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-53 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-71 --> 60 --> 67 --> 63 --> 101 = racine.
-126 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-174 --> 173 --> 175 --> 171 --> 151 --> 63 --> 101 = racine.
-72 --> 79 --> 151 --> 63 --> 101 = racine.
-7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-95 --> 84 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-73 --> 72 --> 79 --> 151 --> 63 --> 101 = racine.
-74 --> 73 --> 72 --> 79 --> 151 --> 63 --> 101 = racine.
-136 --> 135 --> 132 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-75 --> 73 --> 72 --> 79 --> 151 --> 63 --> 101 = racine.
-43 --> 41 --> 151 --> 63 --> 101 = racine.
-173 --> 175 --> 171 --> 151 --> 63 --> 101 = racine.
-76 --> 75 --> 73 --> 72 --> 79 --> 151 --> 63 --> 101 = racine.
-164 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-92 --> 91 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-156 --> 167 --> 166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-120 --> 131 --> 125 --> 123 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-14 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-15 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-97 --> 101 = racine.
-139 --> 141 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-8 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-32 --> 31 --> 29 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-16 --> 15 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-17 --> 18 --> 23 --> 19 --> 151 --> 63 --> 101 = racine.
-165 --> 166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-146 --> 145 --> 154 --> 151 --> 63 --> 101 = racine.
-114 --> 113 --> 108 --> 171 --> 151 --> 63 --> 101 = racine.
-157 --> 158 --> 167 --> 166 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-81 --> 79 --> 151 --> 63 --> 101 = racine.
-82 --> 81 --> 79 --> 151 --> 63 --> 101 = racine.
-33 --> 27 --> 79 --> 151 --> 63 --> 101 = racine.
-93 --> 91 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-83 --> 72 --> 79 --> 151 --> 63 --> 101 = racine.
-54 --> 53 --> 49 --> 58 --> 151 --> 63 --> 101 = racine.
-169 --> 179 --> 171 --> 151 --> 63 --> 101 = racine.
-84 --> 86 --> 163 --> 171 --> 151 --> 63 --> 101 = racine.
-44 --> 43 --> 41 --> 151 --> 63 --> 101 = racine.
-9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-152 --> 151 --> 63 --> 101 = racine.
-11 --> 0 --> 9 --> 7 --> 137 --> 121 --> 79 --> 151 --> 63 --> 101 = racine.
-Arete 4099 (poids : 20) (noeuds : Noeud Noeud 134 (id 134) (donnees: None), Noeud Noeud 135 (id 135) (donnees: None))
-Arete 8762 (poids : 0) (noeuds : Noeud Noeud 135 (id 135) (donnees: None), Noeud Noeud 136 (id 136) (donnees: None))
-Arete 5739 (poids : 30) (noeuds : Noeud Noeud 64 (id 64) (donnees: None), Noeud Noeud 2 (id 2) (donnees: None))
-Arete 4582 (poids : 20) (noeuds : Noeud Noeud 28 (id 28) (donnees: None), Noeud Noeud 29 (id 29) (donnees: None))
-Arete 11892 (poids : 30) (noeuds : Noeud Noeud 138 (id 138) (donnees: None), Noeud Noeud 1 (id 1) (donnees: None))
-Arete 2139 (poids : 20) (noeuds : Noeud Noeud 72 (id 72) (donnees: None), Noeud Noeud 73 (id 73) (donnees: None))
-Arete 15928 (poids : 30) (noeuds : Noeud Noeud 122 (id 122) (donnees: None), Noeud Noeud 8 (id 8) (donnees: None))
-Arete 72 (poids : 0) (noeuds : Noeud Noeud 15 (id 15) (donnees: None), Noeud Noeud 16 (id 16) (donnees: None))
-Arete 1333 (poids : 20) (noeuds : Noeud Noeud 24 (id 24) (donnees: None), Noeud Noeud 25 (id 25) (donnees: None))
-Arete 14717 (poids : 0) (noeuds : Noeud Noeud 73 (id 73) (donnees: None), Noeud Noeud 74 (id 74) (donnees: None))
-Arete 9501 (poids : 20) (noeuds : Noeud Noeud 66 (id 66) (donnees: None), Noeud Noeud 67 (id 67) (donnees: None))
-Arete 12389 (poids : 20) (noeuds : Noeud Noeud 74 (id 74) (donnees: None), Noeud Noeud 75 (id 75) (donnees: None))
-Arete 13115 (poids : 30) (noeuds : Noeud Noeud 161 (id 161) (donnees: None), Noeud Noeud 88 (id 88) (donnees: None))
-Arete 7573 (poids : 20) (noeuds : Noeud Noeud 141 (id 141) (donnees: None), Noeud Noeud 140 (id 140) (donnees: None))
-Arete 329 (poids : 0) (noeuds : Noeud Noeud 77 (id 77) (donnees: None), Noeud Noeud 78 (id 78) (donnees: None))
-Arete 15929 (poids : 30) (noeuds : Noeud Noeud 109 (id 109) (donnees: None), Noeud Noeud 95 (id 95) (donnees: None))
-Arete 9843 (poids : 0) (noeuds : Noeud Noeud 45 (id 45) (donnees: None), Noeud Noeud 46 (id 46) (donnees: None))
-Arete 7954 (poids : 20) (noeuds : Noeud Noeud 124 (id 124) (donnees: None), Noeud Noeud 125 (id 125) (donnees: None))
-Arete 15416 (poids : 0) (noeuds : Noeud Noeud 100 (id 100) (donnees: None), Noeud Noeud 99 (id 99) (donnees: None))
-Arete 2916 (poids : 20) (noeuds : Noeud Noeud 114 (id 114) (donnees: None), Noeud Noeud 115 (id 115) (donnees: None))
-Arete 9120 (poids : 0) (noeuds : Noeud Noeud 67 (id 67) (donnees: None), Noeud Noeud 68 (id 68) (donnees: None))
-Arete 2476 (poids : 20) (noeuds : Noeud Noeud 70 (id 70) (donnees: None), Noeud Noeud 71 (id 71) (donnees: None))
-Arete 9407 (poids : 0) (noeuds : Noeud Noeud 37 (id 37) (donnees: None), Noeud Noeud 38 (id 38) (donnees: None))
-Arete 4122 (poids : 20) (noeuds : Noeud Noeud 154 (id 154) (donnees: None), Noeud Noeud 155 (id 155) (donnees: None))
-Arete 10543 (poids : 0) (noeuds : Noeud Noeud 23 (id 23) (donnees: None), Noeud Noeud 12 (id 12) (donnees: None))
-Arete 13326 (poids : 0) (noeuds : Noeud Noeud 131 (id 131) (donnees: None), Noeud Noeud 120 (id 120) (donnees: None))
-Arete 7583 (poids : 0) (noeuds : Noeud Noeud 0 (id 0) (donnees: None), Noeud Noeud 11 (id 11) (donnees: None))
-Arete 13515 (poids : 20) (noeuds : Noeud Noeud 166 (id 166) (donnees: None), Noeud Noeud 167 (id 167) (donnees: None))
-Arete 3552 (poids : 0) (noeuds : Noeud Noeud 60 (id 60) (donnees: None), Noeud Noeud 71 (id 71) (donnees: None))
-Arete 3545 (poids : 20) (noeuds : Noeud Noeud 42 (id 42) (donnees: None), Noeud Noeud 43 (id 43) (donnees: None))
-Arete 3808 (poids : 20) (noeuds : Noeud Noeud 102 (id 102) (donnees: None), Noeud Noeud 103 (id 103) (donnees: None))
-Arete 14103 (poids : 0) (noeuds : Noeud Noeud 132 (id 132) (donnees: None), Noeud Noeud 143 (id 143) (donnees: None))
-Arete 91 (poids : 0) (noeuds : Noeud Noeud 49 (id 49) (donnees: None), Noeud Noeud 50 (id 50) (donnees: None))
-Arete 12571 (poids : 0) (noeuds : Noeud Noeud 128 (id 128) (donnees: None), Noeud Noeud 127 (id 127) (donnees: None))
-Arete 15881 (poids : 20) (noeuds : Noeud Noeud 168 (id 168) (donnees: None), Noeud Noeud 169 (id 169) (donnees: None))
-Arete 10865 (poids : 20) (noeuds : Noeud Noeud 98 (id 98) (donnees: None), Noeud Noeud 99 (id 99) (donnees: None))
-Arete 7632 (poids : 20) (noeuds : Noeud Noeud 131 (id 131) (donnees: None), Noeud Noeud 130 (id 130) (donnees: None))
-Arete 8220 (poids : 20) (noeuds : Noeud Noeud 64 (id 64) (donnees: None), Noeud Noeud 65 (id 65) (donnees: None))
-Arete 13685 (poids : 20) (noeuds : Noeud Noeud 79 (id 79) (donnees: None), Noeud Noeud 78 (id 78) (donnees: None))
-Arete 3181 (poids : 0) (noeuds : Noeud Noeud 14 (id 14) (donnees: None), Noeud Noeud 13 (id 13) (donnees: None))
-Arete 14701 (poids : 20) (noeuds : Noeud Noeud 151 (id 151) (donnees: None), Noeud Noeud 150 (id 150) (donnees: None))
-Arete 12002 (poids : 20) (noeuds : Noeud Noeud 16 (id 16) (donnees: None), Noeud Noeud 17 (id 17) (donnees: None))
-Arete 7715 (poids : 20) (noeuds : Noeud Noeud 48 (id 48) (donnees: None), Noeud Noeud 49 (id 49) (donnees: None))
-Arete 8979 (poids : 20) (noeuds : Noeud Noeud 50 (id 50) (donnees: None), Noeud Noeud 51 (id 51) (donnees: None))
-Arete 4822 (poids : 0) (noeuds : Noeud Noeud 33 (id 33) (donnees: None), Noeud Noeud 34 (id 34) (donnees: None))
-Arete 15512 (poids : 20) (noeuds : Noeud Noeud 54 (id 54) (donnees: None), Noeud Noeud 55 (id 55) (donnees: None))
-Arete 8540 (poids : 0) (noeuds : Noeud Noeud 24 (id 24) (donnees: None), Noeud Noeud 35 (id 35) (donnees: None))
-Arete 10893 (poids : 30) (noeuds : Noeud Noeud 103 (id 103) (donnees: None), Noeud Noeud 145 (id 145) (donnees: None))
-Arete 12789 (poids : 0) (noeuds : Noeud Noeud 72 (id 72) (donnees: None), Noeud Noeud 83 (id 83) (donnees: None))
-Arete 6603 (poids : 0) (noeuds : Noeud Noeud 151 (id 151) (donnees: None), Noeud Noeud 152 (id 152) (donnees: None))
-Arete 4825 (poids : 20) (noeuds : Noeud Noeud 108 (id 108) (donnees: None), Noeud Noeud 109 (id 109) (donnees: None))
-Arete 2214 (poids : 20) (noeuds : Noeud Noeud 152 (id 152) (donnees: None), Noeud Noeud 153 (id 153) (donnees: None))
-Arete 14429 (poids : 20) (noeuds : Noeud Noeud 90 (id 90) (donnees: None), Noeud Noeud 91 (id 91) (donnees: None))
-Arete 9921 (poids : 0) (noeuds : Noeud Noeud 19 (id 19) (donnees: None), Noeud Noeud 20 (id 20) (donnees: None))
-Arete 9237 (poids : 0) (noeuds : Noeud Noeud 36 (id 36) (donnees: None), Noeud Noeud 47 (id 47) (donnees: None))
-Arete 481 (poids : 0) (noeuds : Noeud Noeud 107 (id 107) (donnees: None), Noeud Noeud 96 (id 96) (donnees: None))
-Arete 10782 (poids : 0) (noeuds : Noeud Noeud 69 (id 69) (donnees: None), Noeud Noeud 70 (id 70) (donnees: None))
-Arete 9617 (poids : 20) (noeuds : Noeud Noeud 96 (id 96) (donnees: None), Noeud Noeud 97 (id 97) (donnees: None))
-Arete 3570 (poids : 0) (noeuds : Noeud Noeud 39 (id 39) (donnees: None), Noeud Noeud 40 (id 40) (donnees: None))
-Arete 2446 (poids : 0) (noeuds : Noeud Noeud 139 (id 139) (donnees: None), Noeud Noeud 140 (id 140) (donnees: None))
-Arete 15081 (poids : 20) (noeuds : Noeud Noeud 20 (id 20) (donnees: None), Noeud Noeud 21 (id 21) (donnees: None))
-Arete 1493 (poids : 0) (noeuds : Noeud Noeud 101 (id 101) (donnees: None), Noeud Noeud 102 (id 102) (donnees: None))
-Arete 7528 (poids : 20) (noeuds : Noeud Noeud 175 (id 175) (donnees: None), Noeud Noeud 174 (id 174) (donnees: None))
-Arete 8425 (poids : 0) (noeuds : Noeud Noeud 123 (id 123) (donnees: None), Noeud Noeud 124 (id 124) (donnees: None))
-Arete 2341 (poids : 30) (noeuds : Noeud Noeud 176 (id 176) (donnees: None), Noeud Noeud 110 (id 110) (donnees: None))
-Arete 4961 (poids : 20) (noeuds : Noeud Noeud 22 (id 22) (donnees: None), Noeud Noeud 23 (id 23) (donnees: None))
-Arete 1182 (poids : 0) (noeuds : Noeud Noeud 149 (id 149) (donnees: None), Noeud Noeud 150 (id 150) (donnees: None))
-Arete 3392 (poids : 0) (noeuds : Noeud Noeud 111 (id 111) (donnees: None), Noeud Noeud 112 (id 112) (donnees: None))
-Arete 7420 (poids : 0) (noeuds : Noeud Noeud 169 (id 169) (donnees: None), Noeud Noeud 170 (id 170) (donnees: None))
-Arete 6161 (poids : 0) (noeuds : Noeud Noeud 66 (id 66) (donnees: None), Noeud Noeud 65 (id 65) (donnees: None))
-Arete 5439 (poids : 20) (noeuds : Noeud Noeud 156 (id 156) (donnees: None), Noeud Noeud 157 (id 157) (donnees: None))
-Arete 1122 (poids : 0) (noeuds : Noeud Noeud 84 (id 84) (donnees: None), Noeud Noeud 95 (id 95) (donnees: None))
-Arete 1123 (poids : 0) (noeuds : Noeud Noeud 115 (id 115) (donnees: None), Noeud Noeud 116 (id 116) (donnees: None))
-Arete 2090 (poids : 0) (noeuds : Noeud Noeud 162 (id 162) (donnees: None), Noeud Noeud 161 (id 161) (donnees: None))
-Arete 16082 (poids : 0) (noeuds : Noeud Noeud 9 (id 9) (donnees: None), Noeud Noeud 10 (id 10) (donnees: None))
-Arete 2132 (poids : 20) (noeuds : Noeud Noeud 60 (id 60) (donnees: None), Noeud Noeud 61 (id 61) (donnees: None))
-Arete 8181 (poids : 0) (noeuds : Noeud Noeud 43 (id 43) (donnees: None), Noeud Noeud 44 (id 44) (donnees: None))
-Arete 13689 (poids : 0) (noeuds : Noeud Noeud 5 (id 5) (donnees: None), Noeud Noeud 6 (id 6) (donnees: None))
-Arete 3835 (poids : 0) (noeuds : Noeud Noeud 103 (id 103) (donnees: None), Noeud Noeud 104 (id 104) (donnees: None))
-Arete 13371 (poids : 0) (noeuds : Noeud Noeud 113 (id 113) (donnees: None), Noeud Noeud 114 (id 114) (donnees: None))
-Arete 12215 (poids : 20) (noeuds : Noeud Noeud 104 (id 104) (donnees: None), Noeud Noeud 105 (id 105) (donnees: None))
-Arete 1482 (poids : 20) (noeuds : Noeud Noeud 128 (id 128) (donnees: None), Noeud Noeud 129 (id 129) (donnees: None))
-Arete 4782 (poids : 0) (noeuds : Noeud Noeud 167 (id 167) (donnees: None), Noeud Noeud 156 (id 156) (donnees: None))
-Arete 2199 (poids : 20) (noeuds : Noeud Noeud 164 (id 164) (donnees: None), Noeud Noeud 165 (id 165) (donnees: None))
-Arete 10894 (poids : 0) (noeuds : Noeud Noeud 117 (id 117) (donnees: None), Noeud Noeud 118 (id 118) (donnees: None))
-Arete 463 (poids : 20) (noeuds : Noeud Noeud 146 (id 146) (donnees: None), Noeud Noeud 147 (id 147) (donnees: None))
-Arete 7068 (poids : 20) (noeuds : Noeud Noeud 158 (id 158) (donnees: None), Noeud Noeud 159 (id 159) (donnees: None))
-Arete 14765 (poids : 0) (noeuds : Noeud Noeud 59 (id 59) (donnees: None), Noeud Noeud 48 (id 48) (donnees: None))
-Arete 816 (poids : 0) (noeuds : Noeud Noeud 7 (id 7) (donnees: None), Noeud Noeud 8 (id 8) (donnees: None))
-Arete 1819 (poids : 20) (noeuds : Noeud Noeud 2 (id 2) (donnees: None), Noeud Noeud 3 (id 3) (donnees: None))
-Arete 9826 (poids : 0) (noeuds : Noeud Noeud 63 (id 63) (donnees: None), Noeud Noeud 64 (id 64) (donnees: None))
-Arete 6551 (poids : 0) (noeuds : Noeud Noeud 41 (id 41) (donnees: None), Noeud Noeud 42 (id 42) (donnees: None))
-Arete 349 (poids : 20) (noeuds : Noeud Noeud 88 (id 88) (donnees: None), Noeud Noeud 89 (id 89) (donnees: None))
-Arete 13613 (poids : 0) (noeuds : Noeud Noeud 163 (id 163) (donnees: None), Noeud Noeud 164 (id 164) (donnees: None))
-Arete 819 (poids : 0) (noeuds : Noeud Noeud 121 (id 121) (donnees: None), Noeud Noeud 122 (id 122) (donnees: None))
-Arete 1248 (poids : 20) (noeuds : Noeud Noeud 30 (id 30) (donnees: None), Noeud Noeud 31 (id 31) (donnees: None))
-Arete 12034 (poids : 0) (noeuds : Noeud Noeud 3 (id 3) (donnees: None), Noeud Noeud 4 (id 4) (donnees: None))
-Arete 391 (poids : 20) (noeuds : Noeud Noeud 86 (id 86) (donnees: None), Noeud Noeud 87 (id 87) (donnees: None))
-Arete 1001 (poids : 0) (noeuds : Noeud Noeud 87 (id 87) (donnees: None), Noeud Noeud 88 (id 88) (donnees: None))
-Arete 15970 (poids : 0) (noeuds : Noeud Noeud 108 (id 108) (donnees: None), Noeud Noeud 119 (id 119) (donnees: None))
-Arete 3437 (poids : 20) (noeuds : Noeud Noeud 8 (id 8) (donnees: None), Noeud Noeud 9 (id 9) (donnees: None))
-Arete 10875 (poids : 30) (noeuds : Noeud Noeud 138 (id 138) (donnees: None), Noeud Noeud 85 (id 85) (donnees: None))
-Arete 6242 (poids : 20) (noeuds : Noeud Noeud 58 (id 58) (donnees: None), Noeud Noeud 59 (id 59) (donnees: None))
-Arete 8637 (poids : 0) (noeuds : Noeud Noeud 86 (id 86) (donnees: None), Noeud Noeud 85 (id 85) (donnees: None))
-Arete 7 (poids : 0) (noeuds : Noeud Noeud 177 (id 177) (donnees: None), Noeud Noeud 178 (id 178) (donnees: None))
-Arete 12403 (poids : 0) (noeuds : Noeud Noeud 55 (id 55) (donnees: None), Noeud Noeud 56 (id 56) (donnees: None))
-Arete 13778 (poids : 20) (noeuds : Noeud Noeud 34 (id 34) (donnees: None), Noeud Noeud 35 (id 35) (donnees: None))
-Arete 15597 (poids : 0) (noeuds : Noeud Noeud 27 (id 27) (donnees: None), Noeud Noeud 28 (id 28) (donnees: None))
-Arete 10342 (poids : 0) (noeuds : Noeud Noeud 91 (id 91) (donnees: None), Noeud Noeud 92 (id 92) (donnees: None))
-Arete 10557 (poids : 20) (noeuds : Noeud Noeud 138 (id 138) (donnees: None), Noeud Noeud 139 (id 139) (donnees: None))
-Arete 3287 (poids : 0) (noeuds : Noeud Noeud 133 (id 133) (donnees: None), Noeud Noeud 134 (id 134) (donnees: None))
-Arete 642 (poids : 0) (noeuds : Noeud Noeud 148 (id 148) (donnees: None), Noeud Noeud 147 (id 147) (donnees: None))
-Arete 15036 (poids : 20) (noeuds : Noeud Noeud 110 (id 110) (donnees: None), Noeud Noeud 111 (id 111) (donnees: None))
-Arete 3415 (poids : 0) (noeuds : Noeud Noeud 51 (id 51) (donnees: None), Noeud Noeud 52 (id 52) (donnees: None))
-Arete 4613 (poids : 20) (noeuds : Noeud Noeud 126 (id 126) (donnees: None), Noeud Noeud 127 (id 127) (donnees: None))
-Arete 1570 (poids : 0) (noeuds : Noeud Noeud 175 (id 175) (donnees: None), Noeud Noeud 176 (id 176) (donnees: None))
-Arete 14911 (poids : 0) (noeuds : Noeud Noeud 129 (id 129) (donnees: None), Noeud Noeud 130 (id 130) (donnees: None))
-Arete 1738 (poids : 20) (noeuds : Noeud Noeud 46 (id 46) (donnees: None), Noeud Noeud 47 (id 47) (donnees: None))
-Arete 15290 (poids : 0) (noeuds : Noeud Noeud 79 (id 79) (donnees: None), Noeud Noeud 80 (id 80) (donnees: None))
-Arete 648 (poids : 20) (noeuds : Noeud Noeud 176 (id 176) (donnees: None), Noeud Noeud 177 (id 177) (donnees: None))
-Arete 3229 (poids : 30) (noeuds : Noeud Noeud 84 (id 84) (donnees: None), Noeud Noeud 49 (id 49) (donnees: None))
-Arete 2980 (poids : 20) (noeuds : Noeud Noeud 172 (id 172) (donnees: None), Noeud Noeud 173 (id 173) (donnees: None))
-Arete 10101 (poids : 0) (noeuds : Noeud Noeud 125 (id 125) (donnees: None), Noeud Noeud 126 (id 126) (donnees: None))
-Arete 6456 (poids : 20) (noeuds : Noeud Noeud 142 (id 142) (donnees: None), Noeud Noeud 143 (id 143) (donnees: None))
-Arete 13218 (poids : 20) (noeuds : Noeud Noeud 116 (id 116) (donnees: None), Noeud Noeud 117 (id 117) (donnees: None))
-Arete 8711 (poids : 0) (noeuds : Noeud Noeud 93 (id 93) (donnees: None), Noeud Noeud 94 (id 94) (donnees: None))
-Arete 10735 (poids : 0) (noeuds : Noeud Noeud 173 (id 173) (donnees: None), Noeud Noeud 174 (id 174) (donnees: None))
-Arete 6326 (poids : 20) (noeuds : Noeud Noeud 80 (id 80) (donnees: None), Noeud Noeud 81 (id 81) (donnees: None))
-Arete 6927 (poids : 0) (noeuds : Noeud Noeud 109 (id 109) (donnees: None), Noeud Noeud 110 (id 110) (donnees: None))
-Arete 9729 (poids : 0) (noeuds : Noeud Noeud 58 (id 58) (donnees: None), Noeud Noeud 57 (id 57) (donnees: None))
-Arete 1666 (poids : 20) (noeuds : Noeud Noeud 92 (id 92) (donnees: None), Noeud Noeud 93 (id 93) (donnees: None))
-Arete 3378 (poids : 30) (noeuds : Noeud Noeud 132 (id 132) (donnees: None), Noeud Noeud 35 (id 35) (donnees: None))
-Arete 218 (poids : 20) (noeuds : Noeud Noeud 144 (id 144) (donnees: None), Noeud Noeud 145 (id 145) (donnees: None))
-Arete 514 (poids : 30) (noeuds : Noeud Noeud 91 (id 91) (donnees: None), Noeud Noeud 12 (id 12) (donnees: None))
-Arete 9102 (poids : 0) (noeuds : Noeud Noeud 97 (id 97) (donnees: None), Noeud Noeud 98 (id 98) (donnees: None))
-Arete 986 (poids : 20) (noeuds : Noeud Noeud 52 (id 52) (donnees: None), Noeud Noeud 53 (id 53) (donnees: None))
-Arete 6709 (poids : 20) (noeuds : Noeud Noeud 12 (id 12) (donnees: None), Noeud Noeud 13 (id 13) (donnees: None))
-Arete 1040 (poids : 20) (noeuds : Noeud Noeud 4 (id 4) (donnees: None), Noeud Noeud 5 (id 5) (donnees: None))
-Arete 15616 (poids : 20) (noeuds : Noeud Noeud 44 (id 44) (donnees: None), Noeud Noeud 45 (id 45) (donnees: None))
-Arete 7986 (poids : 0) (noeuds : Noeud Noeud 105 (id 105) (donnees: None), Noeud Noeud 106 (id 106) (donnees: None))
-Arete 12963 (poids : 20) (noeuds : Noeud Noeud 94 (id 94) (donnees: None), Noeud Noeud 95 (id 95) (donnees: None))
-Arete 3689 (poids : 0) (noeuds : Noeud Noeud 144 (id 144) (donnees: None), Noeud Noeud 155 (id 155) (donnees: None))
-Arete 12241 (poids : 20) (noeuds : Noeud Noeud 171 (id 171) (donnees: None), Noeud Noeud 170 (id 170) (donnees: None))
-Arete 4321 (poids : 0) (noeuds : Noeud Noeud 18 (id 18) (donnees: None), Noeud Noeud 17 (id 17) (donnees: None))
-Arete 10851 (poids : 30) (noeuds : Noeud Noeud 79 (id 79) (donnees: None), Noeud Noeud 143 (id 143) (donnees: None))
-Arete 5417 (poids : 0) (noeuds : Noeud Noeud 89 (id 89) (donnees: None), Noeud Noeud 90 (id 90) (donnees: None))
-Arete 4701 (poids : 20) (noeuds : Noeud Noeud 121 (id 121) (donnees: None), Noeud Noeud 120 (id 120) (donnees: None))
-Arete 8671 (poids : 20) (noeuds : Noeud Noeud 68 (id 68) (donnees: None), Noeud Noeud 69 (id 69) (donnees: None))
-Arete 7034 (poids : 0) (noeuds : Noeud Noeud 160 (id 160) (donnees: None), Noeud Noeud 159 (id 159) (donnees: None))
-Arete 8042 (poids : 0) (noeuds : Noeud Noeud 179 (id 179) (donnees: None), Noeud Noeud 168 (id 168) (donnees: None))
-Arete 3737 (poids : 20) (noeuds : Noeud Noeud 0 (id 0) (donnees: None), Noeud Noeud 1 (id 1) (donnees: None))
-Arete 4703 (poids : 20) (noeuds : Noeud Noeud 10 (id 10) (donnees: None), Noeud Noeud 11 (id 11) (donnees: None))
-Arete 15379 (poids : 20) (noeuds : Noeud Noeud 112 (id 112) (donnees: None), Noeud Noeud 113 (id 113) (donnees: None))
-Arete 11970 (poids : 0) (noeuds : Noeud Noeud 81 (id 81) (donnees: None), Noeud Noeud 82 (id 82) (donnees: None))
-Arete 10377 (poids : 20) (noeuds : Noeud Noeud 82 (id 82) (donnees: None), Noeud Noeud 83 (id 83) (donnees: None))
-Arete 9618 (poids : 0) (noeuds : Noeud Noeud 171 (id 171) (donnees: None), Noeud Noeud 172 (id 172) (donnees: None))
-Arete 8300 (poids : 0) (noeuds : Noeud Noeud 75 (id 75) (donnees: None), Noeud Noeud 76 (id 76) (donnees: None))
-Arete 15573 (poids : 0) (noeuds : Noeud Noeud 61 (id 61) (donnees: None), Noeud Noeud 62 (id 62) (donnees: None))
-Arete 9030 (poids : 0) (noeuds : Noeud Noeud 154 (id 154) (donnees: None), Noeud Noeud 153 (id 153) (donnees: None))
-Arete 3451 (poids : 20) (noeuds : Noeud Noeud 106 (id 106) (donnees: None), Noeud Noeud 107 (id 107) (donnees: None))
-Arete 5986 (poids : 20) (noeuds : Noeud Noeud 14 (id 14) (donnees: None), Noeud Noeud 15 (id 15) (donnees: None))
-Arete 5721 (poids : 0) (noeuds : Noeud Noeud 137 (id 137) (donnees: None), Noeud Noeud 138 (id 138) (donnees: None))
-Arete 10321 (poids : 0) (noeuds : Noeud Noeud 166 (id 166) (donnees: None), Noeud Noeud 165 (id 165) (donnees: None))
-Arete 3266 (poids : 30) (noeuds : Noeud Noeud 149 (id 149) (donnees: None), Noeud Noeud 135 (id 135) (donnees: None))
-Arete 5188 (poids : 0) (noeuds : Noeud Noeud 145 (id 145) (donnees: None), Noeud Noeud 146 (id 146) (donnees: None))
-Arete 14006 (poids : 0) (noeuds : Noeud Noeud 25 (id 25) (donnees: None), Noeud Noeud 26 (id 26) (donnees: None))
-Arete 1884 (poids : 20) (noeuds : Noeud Noeud 132 (id 132) (donnees: None), Noeud Noeud 133 (id 133) (donnees: None))
-Arete 13119 (poids : 30) (noeuds : Noeud Noeud 2 (id 2) (donnees: None), Noeud Noeud 40 (id 40) (donnees: None))
-Arete 1885 (poids : 0) (noeuds : Noeud Noeud 158 (id 158) (donnees: None), Noeud Noeud 157 (id 157) (donnees: None))
-Arete 8801 (poids : 0) (noeuds : Noeud Noeud 31 (id 31) (donnees: None), Noeud Noeud 32 (id 32) (donnees: None))
-Arete 12156 (poids : 0) (noeuds : Noeud Noeud 53 (id 53) (donnees: None), Noeud Noeud 54 (id 54) (donnees: None))
-Arete 11552 (poids : 0) (noeuds : Noeud Noeud 21 (id 21) (donnees: None), Noeud Noeud 22 (id 22) (donnees: None))
-Arete 12972 (poids : 20) (noeuds : Noeud Noeud 36 (id 36) (donnees: None), Noeud Noeud 37 (id 37) (donnees: None))
-Arete 9075 (poids : 0) (noeuds : Noeud Noeud 2 (id 2) (donnees: None), Noeud Noeud 1 (id 1) (donnees: None))
-Arete 5670 (poids : 0) (noeuds : Noeud Noeud 141 (id 141) (donnees: None), Noeud Noeud 142 (id 142) (donnees: None))
-Arete 12552 (poids : 20) (noeuds : Noeud Noeud 32 (id 32) (donnees: None), Noeud Noeud 33 (id 33) (donnees: None))
-Arete 6743 (poids : 20) (noeuds : Noeud Noeud 38 (id 38) (donnees: None), Noeud Noeud 39 (id 39) (donnees: None))
-Arete 13436 (poids : 20) (noeuds : Noeud Noeud 160 (id 160) (donnees: None), Noeud Noeud 161 (id 161) (donnees: None))
-Arete 1074 (poids : 0) (noeuds : Noeud Noeud 29 (id 29) (donnees: None), Noeud Noeud 30 (id 30) (donnees: None))
+Graphe Arbre Minimal comprenant 180 noeuds et 2114 aretes
+  Noeud 5 (id 5) (donnees: None)
+  Noeud 78 (id 78) (donnees: None)
+  Noeud 41 (id 41) (donnees: None)
+  Noeud 165 (id 165) (donnees: None)
+  Noeud 20 (id 20) (donnees: None)
+  Noeud 35 (id 35) (donnees: None)
+  Noeud 150 (id 150) (donnees: None)
+  Noeud 132 (id 132) (donnees: None)
+  Noeud 62 (id 62) (donnees: None)
+  Noeud 105 (id 105) (donnees: None)
+  Noeud 29 (id 29) (donnees: None)
+  Noeud 84 (id 84) (donnees: None)
+  Noeud 145 (id 145) (donnees: None)
+  Noeud 0 (id 0) (donnees: None)
+  Noeud 31 (id 31) (donnees: None)
+  Noeud 128 (id 128) (donnees: None)
+  Noeud 14 (id 14) (donnees: None)
+  Noeud 43 (id 43) (donnees: None)
+  Noeud 72 (id 72) (donnees: None)
+  Noeud 148 (id 148) (donnees: None)
+  Noeud 1 (id 1) (donnees: None)
+  Noeud 44 (id 44) (donnees: None)
+  Noeud 134 (id 134) (donnees: None)
+  Noeud 107 (id 107) (donnees: None)
+  Noeud 100 (id 100) (donnees: None)
+  Noeud 23 (id 23) (donnees: None)
+  Noeud 149 (id 149) (donnees: None)
+  Noeud 2 (id 2) (donnees: None)
+  Noeud 171 (id 171) (donnees: None)
+  Noeud 108 (id 108) (donnees: None)
+  Noeud 40 (id 40) (donnees: None)
+  Noeud 137 (id 137) (donnees: None)
+  Noeud 87 (id 87) (donnees: None)
+  Noeud 6 (id 6) (donnees: None)
+  Noeud 66 (id 66) (donnees: None)
+  Noeud 109 (id 109) (donnees: None)
+  Noeud 167 (id 167) (donnees: None)
+  Noeud 152 (id 152) (donnees: None)
+  Noeud 151 (id 151) (donnees: None)
+  Noeud 36 (id 36) (donnees: None)
+  Noeud 133 (id 133) (donnees: None)
+  Noeud 19 (id 19) (donnees: None)
+  Noeud 67 (id 67) (donnees: None)
+  Noeud 13 (id 13) (donnees: None)
+  Noeud 110 (id 110) (donnees: None)
+  Noeud 88 (id 88) (donnees: None)
+  Noeud 26 (id 26) (donnees: None)
+  Noeud 146 (id 146) (donnees: None)
+  Noeud 68 (id 68) (donnees: None)
+  Noeud 32 (id 32) (donnees: None)
+  Noeud 129 (id 129) (donnees: None)
+  Noeud 111 (id 111) (donnees: None)
+  Noeud 90 (id 90) (donnees: None)
+  Noeud 69 (id 69) (donnees: None)
+  Noeud 49 (id 49) (donnees: None)
+  Noeud 154 (id 154) (donnees: None)
+  Noeud 106 (id 106) (donnees: None)
+  Noeud 70 (id 70) (donnees: None)
+  Noeud 172 (id 172) (donnees: None)
+  Noeud 113 (id 113) (donnees: None)
+  Noeud 155 (id 155) (donnees: None)
+  Noeud 80 (id 80) (donnees: None)
+  Noeud 8 (id 8) (donnees: None)
+  Noeud 89 (id 89) (donnees: None)
+  Noeud 114 (id 114) (donnees: None)
+  Noeud 168 (id 168) (donnees: None)
+  Noeud 125 (id 125) (donnees: None)
+  Noeud 156 (id 156) (donnees: None)
+  Noeud 63 (id 63) (donnees: None)
+  Noeud 127 (id 127) (donnees: None)
+  Noeud 9 (id 9) (donnees: None)
+  Noeud 65 (id 65) (donnees: None)
+  Noeud 3 (id 3) (donnees: None)
+  Noeud 52 (id 52) (donnees: None)
+  Noeud 4 (id 4) (donnees: None)
+  Noeud 131 (id 131) (donnees: None)
+  Noeud 94 (id 94) (donnees: None)
+  Noeud 164 (id 164) (donnees: None)
+  Noeud 50 (id 50) (donnees: None)
+  Noeud 7 (id 7) (donnees: None)
+  Noeud 136 (id 136) (donnees: None)
+  Noeud 33 (id 33) (donnees: None)
+  Noeud 71 (id 71) (donnees: None)
+  Noeud 130 (id 130) (donnees: None)
+  Noeud 135 (id 135) (donnees: None)
+  Noeud 16 (id 16) (donnees: None)
+  Noeud 179 (id 179) (donnees: None)
+  Noeud 10 (id 10) (donnees: None)
+  Noeud 74 (id 74) (donnees: None)
+  Noeud 158 (id 158) (donnees: None)
+  Noeud 75 (id 75) (donnees: None)
+  Noeud 139 (id 139) (donnees: None)
+  Noeud 11 (id 11) (donnees: None)
+  Noeud 140 (id 140) (donnees: None)
+  Noeud 141 (id 141) (donnees: None)
+  Noeud 117 (id 117) (donnees: None)
+  Noeud 142 (id 142) (donnees: None)
+  Noeud 126 (id 126) (donnees: None)
+  Noeud 17 (id 17) (donnees: None)
+  Noeud 159 (id 159) (donnees: None)
+  Noeud 18 (id 18) (donnees: None)
+  Noeud 82 (id 82) (donnees: None)
+  Noeud 138 (id 138) (donnees: None)
+  Noeud 83 (id 83) (donnees: None)
+  Noeud 173 (id 173) (donnees: None)
+  Noeud 147 (id 147) (donnees: None)
+  Noeud 55 (id 55) (donnees: None)
+  Noeud 85 (id 85) (donnees: None)
+  Noeud 115 (id 115) (donnees: None)
+  Noeud 86 (id 86) (donnees: None)
+  Noeud 160 (id 160) (donnees: None)
+  Noeud 24 (id 24) (donnees: None)
+  Noeud 25 (id 25) (donnees: None)
+  Noeud 81 (id 81) (donnees: None)
+  Noeud 76 (id 76) (donnees: None)
+  Noeud 73 (id 73) (donnees: None)
+  Noeud 64 (id 64) (donnees: None)
+  Noeud 153 (id 153) (donnees: None)
+  Noeud 56 (id 56) (donnees: None)
+  Noeud 27 (id 27) (donnees: None)
+  Noeud 91 (id 91) (donnees: None)
+  Noeud 92 (id 92) (donnees: None)
+  Noeud 161 (id 161) (donnees: None)
+  Noeud 93 (id 93) (donnees: None)
+  Noeud 157 (id 157) (donnees: None)
+  Noeud 21 (id 21) (donnees: None)
+  Noeud 77 (id 77) (donnees: None)
+  Noeud 95 (id 95) (donnees: None)
+  Noeud 96 (id 96) (donnees: None)
+  Noeud 120 (id 120) (donnees: None)
+  Noeud 97 (id 97) (donnees: None)
+  Noeud 98 (id 98) (donnees: None)
+  Noeud 162 (id 162) (donnees: None)
+  Noeud 99 (id 99) (donnees: None)
+  Noeud 51 (id 51) (donnees: None)
+  Noeud 37 (id 37) (donnees: None)
+  Noeud 15 (id 15) (donnees: None)
+  Noeud 34 (id 34) (donnees: None)
+  Noeud 38 (id 38) (donnees: None)
+  Noeud 39 (id 39) (donnees: None)
+  Noeud 121 (id 121) (donnees: None)
+  Noeud 166 (id 166) (donnees: None)
+  Noeud 104 (id 104) (donnees: None)
+  Noeud 163 (id 163) (donnees: None)
+  Noeud 42 (id 42) (donnees: None)
+  Noeud 169 (id 169) (donnees: None)
+  Noeud 79 (id 79) (donnees: None)
+  Noeud 170 (id 170) (donnees: None)
+  Noeud 45 (id 45) (donnees: None)
+  Noeud 59 (id 59) (donnees: None)
+  Noeud 30 (id 30) (donnees: None)
+  Noeud 46 (id 46) (donnees: None)
+  Noeud 47 (id 47) (donnees: None)
+  Noeud 101 (id 101) (donnees: None)
+  Noeud 48 (id 48) (donnees: None)
+  Noeud 175 (id 175) (donnees: None)
+  Noeud 143 (id 143) (donnees: None)
+  Noeud 28 (id 28) (donnees: None)
+  Noeud 176 (id 176) (donnees: None)
+  Noeud 174 (id 174) (donnees: None)
+  Noeud 177 (id 177) (donnees: None)
+  Noeud 60 (id 60) (donnees: None)
+  Noeud 178 (id 178) (donnees: None)
+  Noeud 116 (id 116) (donnees: None)
+  Noeud 53 (id 53) (donnees: None)
+  Noeud 102 (id 102) (donnees: None)
+  Noeud 54 (id 54) (donnees: None)
+  Noeud 118 (id 118) (donnees: None)
+  Noeud 144 (id 144) (donnees: None)
+  Noeud 119 (id 119) (donnees: None)
+  Noeud 57 (id 57) (donnees: None)
+  Noeud 61 (id 61) (donnees: None)
+  Noeud 58 (id 58) (donnees: None)
+  Noeud 122 (id 122) (donnees: None)
+  Noeud 103 (id 103) (donnees: None)
+  Noeud 123 (id 123) (donnees: None)
+  Noeud 112 (id 112) (donnees: None)
+  Noeud 12 (id 12) (donnees: None)
+  Noeud 124 (id 124) (donnees: None)
+  Noeud 22 (id 22) (donnees: None)
+  Arete 4356 (poids : 20) (137 <---> 136)
+  Arete 13685 (poids : 20) (78 <---> 79)
+  Arete 2090 (poids : 0) (162 <---> 161)
+  Arete 11207 (poids : 30) (159 <---> 38)
+  Arete 218 (poids : 20) (145 <---> 144)
+  Arete 7573 (poids : 20) (141 <---> 140)
+  Arete 329 (poids : 0) (78 <---> 77)
+  Arete 4588 (poids : 30) (120 <---> 54)
+  Arete 15036 (poids : 20) (110 <---> 111)
+  Arete 7954 (poids : 20) (125 <---> 124)
+  Arete 10131 (poids : 20) (40 <---> 41)
+  Arete 15416 (poids : 0) (99 <---> 100)
+  Arete 2916 (poids : 20) (114 <---> 115)
+  Arete 8220 (poids : 20) (64 <---> 65)
+  Arete 12241 (poids : 20) (171 <---> 170)
+  Arete 10557 (poids : 20) (139 <---> 138)
+  Arete 9407 (poids : 0) (37 <---> 38)
+  Arete 10782 (poids : 0) (70 <---> 69)
+  Arete 10164 (poids : 30) (96 <---> 36)
+  Arete 10543 (poids : 0) (12 <---> 23)
+  Arete 2446 (poids : 0) (139 <---> 140)
+  Arete 7583 (poids : 0) (0 <---> 11)
+  Arete 6513 (poids : 20) (84 <---> 85)
+  Arete 7528 (poids : 20) (175 <---> 174)
+  Arete 7003 (poids : 20) (118 <---> 119)
+  Arete 4122 (poids : 20) (155 <---> 154)
+  Arete 91 (poids : 0) (49 <---> 50)
+  Arete 10865 (poids : 20) (98 <---> 99)
+  Arete 16082 (poids : 0) (9 <---> 10)
+  Arete 11810 (poids : 20) (100 <---> 101)
+  Arete 5188 (poids : 0) (145 <---> 146)
+  Arete 1040 (poids : 20) (4 <---> 5)
+  Arete 3181 (poids : 0) (14 <---> 13)
+  Arete 12002 (poids : 20) (17 <---> 16)
+  Arete 14717 (poids : 0) (73 <---> 74)
+  Arete 1482 (poids : 20) (128 <---> 129)
+  Arete 2113 (poids : 30) (0 <---> 18)
+  Arete 8181 (poids : 0) (43 <---> 44)
+  Arete 8540 (poids : 0) (24 <---> 35)
+  Arete 12789 (poids : 0) (83 <---> 72)
+  Arete 8979 (poids : 20) (50 <---> 51)
+  Arete 1738 (poids : 20) (46 <---> 47)
+  Arete 14429 (poids : 20) (90 <---> 91)
+  Arete 7068 (poids : 20) (158 <---> 159)
+  Arete 9237 (poids : 0) (36 <---> 47)
+  Arete 481 (poids : 0) (107 <---> 96)
+  Arete 3835 (poids : 0) (104 <---> 103)
+  Arete 6603 (poids : 0) (151 <---> 152)
+  Arete 9618 (poids : 0) (171 <---> 172)
+  Arete 349 (poids : 20) (88 <---> 89)
+  Arete 15379 (poids : 20) (112 <---> 113)
+  Arete 15597 (poids : 0) (27 <---> 28)
+  Arete 8801 (poids : 0) (31 <---> 32)
+  Arete 3415 (poids : 0) (51 <---> 52)
+  Arete 4582 (poids : 20) (28 <---> 29)
+  Arete 12215 (poids : 20) (104 <---> 105)
+  Arete 4961 (poids : 20) (22 <---> 23)
+  Arete 7986 (poids : 0) (105 <---> 106)
+  Arete 3437 (poids : 20) (8 <---> 9)
+  Arete 2506 (poids : 30) (48 <---> 80)
+  Arete 6161 (poids : 0) (65 <---> 66)
+  Arete 4613 (poids : 20) (126 <---> 127)
+  Arete 1122 (poids : 0) (95 <---> 84)
+  Arete 1123 (poids : 0) (115 <---> 116)
+  Arete 2199 (poids : 20) (165 <---> 164)
+  Arete 3392 (poids : 0) (111 <---> 112)
+  Arete 13689 (poids : 0) (6 <---> 5)
+  Arete 4822 (poids : 0) (33 <---> 34)
+  Arete 1819 (poids : 20) (2 <---> 3)
+  Arete 5931 (poids : 20) (122 <---> 123)
+  Arete 14006 (poids : 0) (25 <---> 26)
+  Arete 9843 (poids : 0) (45 <---> 46)
+  Arete 2577 (poids : 20) (26 <---> 27)
+  Arete 14701 (poids : 20) (150 <---> 151)
+  Arete 10894 (poids : 0) (117 <---> 118)
+  Arete 15081 (poids : 20) (21 <---> 20)
+  Arete 13371 (poids : 0) (113 <---> 114)
+  Arete 6551 (poids : 0) (41 <---> 42)
+  Arete 819 (poids : 0) (121 <---> 122)
+  Arete 5986 (poids : 20) (14 <---> 15)
+  Arete 2074 (poids : 30) (166 <---> 86)
+  Arete 9507 (poids : 30) (53 <---> 61)
+  Arete 6242 (poids : 20) (58 <---> 59)
+  Arete 11420 (poids : 30) (5 <---> 126)
+  Arete 13613 (poids : 0) (164 <---> 163)
+  Arete 11031 (poids : 20) (6 <---> 7)
+  Arete 2139 (poids : 20) (72 <---> 73)
+  Arete 9102 (poids : 0) (97 <---> 98)
+  Arete 4701 (poids : 20) (120 <---> 121)
+  Arete 12403 (poids : 0) (55 <---> 56)
+  Arete 12156 (poids : 0) (53 <---> 54)
+  Arete 10342 (poids : 0) (91 <---> 92)
+  Arete 1029 (poids : 30) (39 <---> 61)
+  Arete 3287 (poids : 0) (134 <---> 133)
+  Arete 642 (poids : 0) (148 <---> 147)
+  Arete 13778 (poids : 20) (34 <---> 35)
+  Arete 9826 (poids : 0) (63 <---> 64)
+  Arete 1182 (poids : 0) (150 <---> 149)
+  Arete 391 (poids : 20) (86 <---> 87)
+  Arete 15917 (poids : 20) (149 <---> 148)
+  Arete 13211 (poids : 20) (63 <---> 62)
+  Arete 3379 (poids : 20) (162 <---> 163)
+  Arete 14911 (poids : 0) (129 <---> 130)
+  Arete 2476 (poids : 20) (70 <---> 71)
+  Arete 15290 (poids : 0) (79 <---> 80)
+  Arete 648 (poids : 20) (176 <---> 177)
+  Arete 5417 (poids : 0) (89 <---> 90)
+  Arete 2980 (poids : 20) (172 <---> 173)
+  Arete 15881 (poids : 20) (169 <---> 168)
+  Arete 9030 (poids : 0) (153 <---> 154)
+  Arete 1030 (poids : 30) (153 <---> 50)
+  Arete 13436 (poids : 20) (160 <---> 161)
+  Arete 1570 (poids : 0) (175 <---> 176)
+  Arete 11970 (poids : 0) (81 <---> 82)
+  Arete 10735 (poids : 0) (173 <---> 174)
+  Arete 6326 (poids : 20) (81 <---> 80)
+  Arete 3570 (poids : 0) (39 <---> 40)
+  Arete 7034 (poids : 0) (159 <---> 160)
+  Arete 14103 (poids : 0) (132 <---> 143)
+  Arete 1666 (poids : 20) (92 <---> 93)
+  Arete 10101 (poids : 0) (125 <---> 126)
+  Arete 3545 (poids : 20) (42 <---> 43)
+  Arete 7715 (poids : 20) (48 <---> 49)
+  Arete 4782 (poids : 0) (167 <---> 156)
+  Arete 9921 (poids : 0) (19 <---> 20)
+  Arete 12034 (poids : 0) (3 <---> 4)
+  Arete 5638 (poids : 30) (171 <---> 110)
+  Arete 1985 (poids : 30) (139 <---> 149)
+  Arete 15512 (poids : 20) (54 <---> 55)
+  Arete 463 (poids : 20) (146 <---> 147)
+  Arete 986 (poids : 20) (52 <---> 53)
+  Arete 3689 (poids : 0) (155 <---> 144)
+  Arete 4321 (poids : 0) (17 <---> 18)
+  Arete 1493 (poids : 0) (101 <---> 102)
+  Arete 13296 (poids : 20) (19 <---> 18)
+  Arete 72 (poids : 0) (15 <---> 16)
+  Arete 8671 (poids : 20) (68 <---> 69)
+  Arete 11552 (poids : 0) (21 <---> 22)
+  Arete 8042 (poids : 0) (179 <---> 168)
+  Arete 1074 (poids : 0) (29 <---> 30)
+  Arete 10377 (poids : 20) (83 <---> 82)
+  Arete 3552 (poids : 0) (71 <---> 60)
+  Arete 4703 (poids : 20) (10 <---> 11)
+  Arete 5721 (poids : 0) (137 <---> 138)
+  Arete 15573 (poids : 0) (62 <---> 61)
+  Arete 15970 (poids : 0) (108 <---> 119)
+  Arete 3451 (poids : 20) (106 <---> 107)
+  Arete 8637 (poids : 0) (86 <---> 85)
+  Arete 8711 (poids : 0) (93 <---> 94)
+  Arete 8425 (poids : 0) (123 <---> 124)
+  Arete 1248 (poids : 20) (30 <---> 31)
+  Arete 816 (poids : 0) (8 <---> 7)
+  Arete 10321 (poids : 0) (166 <---> 165)
+  Arete 9692 (poids : 30) (33 <---> 124)
+  Arete 13218 (poids : 20) (116 <---> 117)
+  Arete 1001 (poids : 0) (87 <---> 88)
+  Arete 8300 (poids : 0) (76 <---> 75)
+  Arete 1884 (poids : 20) (132 <---> 133)
+  Arete 1885 (poids : 0) (158 <---> 157)
+  Arete 14765 (poids : 0) (48 <---> 59)
+  Arete 12389 (poids : 20) (74 <---> 75)
+  Arete 6927 (poids : 0) (109 <---> 110)
+  Arete 13326 (poids : 0) (120 <---> 131)
+  Arete 9617 (poids : 20) (96 <---> 97)
+  Arete 9120 (poids : 0) (67 <---> 68)
+  Arete 5670 (poids : 0) (141 <---> 142)
+  Arete 2132 (poids : 20) (60 <---> 61)
+  Arete 9729 (poids : 0) (57 <---> 58)
+  Arete 6743 (poids : 20) (38 <---> 39)
+  Arete 9075 (poids : 0) (1 <---> 2)
+  Arete 7 (poids : 0) (177 <---> 178)
+  Arete 12552 (poids : 20) (32 <---> 33)
+  Arete 4099 (poids : 20) (134 <---> 135)
+  Arete 8762 (poids : 0) (135 <---> 136)
+  Arete 7420 (poids : 0) (170 <---> 169)
+  Arete 13515 (poids : 20) (166 <---> 167)
+  Arete 16051 (poids : 30) (95 <---> 119)
+  Arete 12571 (poids : 0) (128 <---> 127)
+  Arete 15616 (poids : 20) (44 <---> 45)

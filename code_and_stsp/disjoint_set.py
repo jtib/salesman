@@ -35,18 +35,17 @@ class DisjointSet(object):
             raise AttributeError("Utiliser la methode union_sets pour relier deux ensembles disjoints.")
 
 
-    def union_sets(self,set):
+    def union_sets(self,dset):
         """Realise l'union de deux sous ensembles disjoints par leurs racines.
         Renvoie True si l'union est possible, False si les deux ensembles sont connexes"""
         root1 = self.find_root()
-        root2 = set.find_root()
+        root2 = dset.find_root()
 
         if root1 != root2:
             root2.parent = root1
             return True
         else:
             return False
-
 
     def find_root(self):
         "Renvoie la racine de l'ensemble"
@@ -79,10 +78,10 @@ if __name__ == '__main__':
 
     # On affiche la racine de set1
     print set1.find_root()
-    
+
     # On essaye d'unir deux membres d'un meme ensemble
     print set1.union_sets(set2)
-    
+
     # On unit deux ensembles disjoints et on verifie le booleen de sortie
     print set1.union_sets(set3)
     # On affiche les trois sous-ensembles initiaux

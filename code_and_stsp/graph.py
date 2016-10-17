@@ -10,12 +10,10 @@ class Graph(object):
         self.__name = name
         self.__adj = {} # Matrice d'adjacence
         self.__edges = 0
-        self.__nodes = 0
 
     def add_node(self, node):
         "Ajoute un noeud au graphe."
         self.__adj.setdefault(node,{})
-        self.__nodes += 1
 
     def retrieve_nodes_from_id(self, *ids):
         return [node for node in self.__adj.keys()
@@ -46,7 +44,7 @@ class Graph(object):
 
     def get_nb_nodes(self):
         "Donne le nombre de noeuds du graphe."
-        return self.__nodes
+        return len(self.get_nodes())
 
     def get_edges(self):
         "Donne la liste des aretes du graphe."
@@ -58,6 +56,10 @@ class Graph(object):
         "Donne le nombre d'aretes du graphe."
         return self.__edges
 
+    def tree_weight(self):
+        "Calcule le poids de l'arbre."
+        return sum([e.get_weight() for e in self.get_edges()])
+
     def kruskal(self):
         "Retourne un arbre de recouvrement minimal s'il existe"
         min_tree = Graph('Arbre Minimal')
@@ -66,7 +68,7 @@ class Graph(object):
 
         nodes = self.get_nodes()
         # Le nombre de noeuds du graphe
-        nb_nodes = self.__nodes
+        nb_nodes = self.get_nb_nodes
         # On remplit le dictionnaire de disjoint_sets
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
@@ -100,6 +102,7 @@ class Graph(object):
             s += '\n  ' + repr(node)
         for edge in self.get_edges():
             s += '\n  ' + repr(edge)
+        s += '\n' + 'Poids total : ' + repr(self.tree_weight())
         return s
 
 

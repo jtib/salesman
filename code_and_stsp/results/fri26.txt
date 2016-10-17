@@ -1,51 +1,52 @@
-12 --> 10 --> 9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-13 --> 9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-14 --> 13 --> 9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-15 --> 1 --> 0 = racine.
-16 --> 15 --> 1 --> 0 = racine.
-17 --> 16 --> 15 --> 1 --> 0 = racine.
-18 --> 16 --> 15 --> 1 --> 0 = racine.
-19 --> 18 --> 16 --> 15 --> 1 --> 0 = racine.
-20 --> 25 --> 16 --> 15 --> 1 --> 0 = racine.
-21 --> 20 --> 25 --> 16 --> 15 --> 1 --> 0 = racine.
-22 --> 1 --> 0 = racine.
-23 --> 1 --> 0 = racine.
-24 --> 1 --> 0 = racine.
-25 --> 16 --> 15 --> 1 --> 0 = racine.
-0 = racine.
-1 --> 0 = racine.
-2 --> 1 --> 0 = racine.
-3 --> 2 --> 1 --> 0 = racine.
-4 --> 3 --> 2 --> 1 --> 0 = racine.
-5 --> 4 --> 3 --> 2 --> 1 --> 0 = racine.
-6 --> 3 --> 2 --> 1 --> 0 = racine.
-7 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-10 --> 9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-11 --> 10 --> 9 --> 8 --> 6 --> 3 --> 2 --> 1 --> 0 = racine.
-Arete 272 (poids : 34) (noeuds : Noeud Noeud 6 (id 6) (donnees: None), Noeud Noeud 8 (id 8) (donnees: None))
-Arete 69 (poids : 13) (noeuds : Noeud Noeud 18 (id 18) (donnees: None), Noeud Noeud 19 (id 19) (donnees: None))
-Arete 256 (poids : 22) (noeuds : Noeud Noeud 8 (id 8) (donnees: None), Noeud Noeud 9 (id 9) (donnees: None))
-Arete 99 (poids : 83) (noeuds : Noeud Noeud 0 (id 0) (donnees: None), Noeud Noeud 1 (id 1) (donnees: None))
-Arete 177 (poids : 11) (noeuds : Noeud Noeud 3 (id 3) (donnees: None), Noeud Noeud 5 (id 5) (donnees: None))
-Arete 214 (poids : 51) (noeuds : Noeud Noeud 22 (id 22) (donnees: None), Noeud Noeud 23 (id 23) (donnees: None))
-Arete 240 (poids : 35) (noeuds : Noeud Noeud 4 (id 4) (donnees: None), Noeud Noeud 6 (id 6) (donnees: None))
-Arete 150 (poids : 20) (noeuds : Noeud Noeud 9 (id 9) (donnees: None), Noeud Noeud 10 (id 10) (donnees: None))
-Arete 250 (poids : 26) (noeuds : Noeud Noeud 20 (id 20) (donnees: None), Noeud Noeud 21 (id 21) (donnees: None))
-Arete 45 (poids : 15) (noeuds : Noeud Noeud 13 (id 13) (donnees: None), Noeud Noeud 14 (id 14) (donnees: None))
-Arete 47 (poids : 11) (noeuds : Noeud Noeud 10 (id 10) (donnees: None), Noeud Noeud 12 (id 12) (donnees: None))
-Arete 15 (poids : 42) (noeuds : Noeud Noeud 10 (id 10) (donnees: None), Noeud Noeud 15 (id 15) (donnees: None))
-Arete 188 (poids : 50) (noeuds : Noeud Noeud 21 (id 21) (donnees: None), Noeud Noeud 22 (id 22) (donnees: None))
-Arete 288 (poids : 20) (noeuds : Noeud Noeud 9 (id 9) (donnees: None), Noeud Noeud 13 (id 13) (donnees: None))
-Arete 193 (poids : 27) (noeuds : Noeud Noeud 25 (id 25) (donnees: None), Noeud Noeud 21 (id 21) (donnees: None))
-Arete 253 (poids : 64) (noeuds : Noeud Noeud 22 (id 22) (donnees: None), Noeud Noeud 24 (id 24) (donnees: None))
-Arete 228 (poids : 39) (noeuds : Noeud Noeud 15 (id 15) (donnees: None), Noeud Noeud 19 (id 19) (donnees: None))
-Arete 231 (poids : 40) (noeuds : Noeud Noeud 1 (id 1) (donnees: None), Noeud Noeud 2 (id 2) (donnees: None))
-Arete 165 (poids : 18) (noeuds : Noeud Noeud 10 (id 10) (donnees: None), Noeud Noeud 11 (id 11) (donnees: None))
-Arete 300 (poids : 36) (noeuds : Noeud Noeud 2 (id 2) (donnees: None), Noeud Noeud 14 (id 14) (donnees: None))
-Arete 267 (poids : 9) (noeuds : Noeud Noeud 4 (id 4) (donnees: None), Noeud Noeud 5 (id 5) (donnees: None))
-Arete 103 (poids : 22) (noeuds : Noeud Noeud 16 (id 16) (donnees: None), Noeud Noeud 17 (id 17) (donnees: None))
-Arete 237 (poids : 26) (noeuds : Noeud Noeud 6 (id 6) (donnees: None), Noeud Noeud 7 (id 7) (donnees: None))
-Arete 234 (poids : 29) (noeuds : Noeud Noeud 17 (id 17) (donnees: None), Noeud Noeud 19 (id 19) (donnees: None))
-Arete 305 (poids : 30) (noeuds : Noeud Noeud 16 (id 16) (donnees: None), Noeud Noeud 20 (id 20) (donnees: None))
+Graphe Arbre Minimal comprenant 26 noeuds et 100 aretes
+  Noeud 0 (id 0) (donnees: None)
+  Noeud 1 (id 1) (donnees: None)
+  Noeud 2 (id 2) (donnees: None)
+  Noeud 3 (id 3) (donnees: None)
+  Noeud 4 (id 4) (donnees: None)
+  Noeud 5 (id 5) (donnees: None)
+  Noeud 6 (id 6) (donnees: None)
+  Noeud 7 (id 7) (donnees: None)
+  Noeud 8 (id 8) (donnees: None)
+  Noeud 9 (id 9) (donnees: None)
+  Noeud 10 (id 10) (donnees: None)
+  Noeud 11 (id 11) (donnees: None)
+  Noeud 12 (id 12) (donnees: None)
+  Noeud 13 (id 13) (donnees: None)
+  Noeud 14 (id 14) (donnees: None)
+  Noeud 15 (id 15) (donnees: None)
+  Noeud 16 (id 16) (donnees: None)
+  Noeud 17 (id 17) (donnees: None)
+  Noeud 18 (id 18) (donnees: None)
+  Noeud 19 (id 19) (donnees: None)
+  Noeud 20 (id 20) (donnees: None)
+  Noeud 21 (id 21) (donnees: None)
+  Noeud 22 (id 22) (donnees: None)
+  Noeud 23 (id 23) (donnees: None)
+  Noeud 24 (id 24) (donnees: None)
+  Noeud 25 (id 25) (donnees: None)
+  Arete 177 (poids : 11) (3 <---> 5)
+  Arete 214 (poids : 51) (22 <---> 23)
+  Arete 103 (poids : 22) (16 <---> 17)
+  Arete 150 (poids : 20) (9 <---> 10)
+  Arete 300 (poids : 36) (2 <---> 14)
+  Arete 250 (poids : 26) (20 <---> 21)
+  Arete 45 (poids : 15) (13 <---> 14)
+  Arete 47 (poids : 11) (10 <---> 12)
+  Arete 240 (poids : 35) (4 <---> 6)
+  Arete 15 (poids : 42) (10 <---> 15)
+  Arete 99 (poids : 83) (0 <---> 1)
+  Arete 288 (poids : 20) (9 <---> 13)
+  Arete 256 (poids : 22) (8 <---> 9)
+  Arete 193 (poids : 27) (21 <---> 25)
+  Arete 228 (poids : 39) (15 <---> 19)
+  Arete 231 (poids : 40) (1 <---> 2)
+  Arete 165 (poids : 18) (10 <---> 11)
+  Arete 234 (poids : 29) (17 <---> 19)
+  Arete 267 (poids : 9) (4 <---> 5)
+  Arete 188 (poids : 50) (21 <---> 22)
+  Arete 253 (poids : 64) (22 <---> 24)
+  Arete 237 (poids : 26) (6 <---> 7)
+  Arete 305 (poids : 30) (16 <---> 20)
+  Arete 272 (poids : 34) (6 <---> 8)
+  Arete 69 (poids : 13) (18 <---> 19)
