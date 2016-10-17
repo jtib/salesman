@@ -17,6 +17,7 @@ class Graph(object):
         self.__adj.setdefault(node,{})
 
     def retrieve_nodes_from_id(self, *ids):
+        "Renvoie les noeuds a partir de leurs ids."
         return [node for node in self.__adj.keys()
                 if node.get_id() in ids]
 
@@ -24,23 +25,15 @@ class Graph(object):
         "Ajoute une arete au graphe."
         (n1, n2) = edge.get_nodes()
         try:
+            # checking if both nodes are there
             nodes = [self.__adj[n1], self.__adj[n2]]
+            # adding the new edge
             self.__adj[n2][n1] = self.__adj[n1][n2] = edge
             self.__edges = edge.get_id() + 1
+        # if one (or both) node(s) missing
         except KeyError as ke:
             raise KeyError("At least node {0} missing. Add all nodes before\
                      adding edges.".format(ke))
-        ## retrieving nodes
-        #nodes = self.retrieve_nodes_from_id(n1.get_id(), n2.get_id())
-        ## if both nodes already there
-        #if len(nodes) == 2:
-        #    self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
-        #            = edge
-        #    self.__edges = edge.get_id() + 1
-        ## if only one is there and it doesn't point at itself, or none are
-        #elif len(nodes) < 2 and n1 != n2:
-        #    raise KeyError("Missing node(s). Add all nodes before adding edges\
-        #        (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1.get_id(), n2.get_id()))
 
     def get_name(self):
         "Donne le nom du graphe."
