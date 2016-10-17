@@ -1,3 +1,4 @@
+import numpy as np
 from node import Node
 from disjoint_set import DisjointSet
 
@@ -22,17 +23,24 @@ class Graph(object):
     def add_edge(self, edge):
         "Ajoute une arete au graphe."
         (n1, n2) = edge.get_nodes()
-        # retrieving nodes
-        nodes = self.retrieve_nodes_from_id(n1.get_id(), n2.get_id())
-        # if both nodes already there
-        if len(nodes) == 2:
-            self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
-                    = edge
+        try:
+            nodes = [self.__adj[n1], self.__adj[n2]]
+            self.__adj[n2][n1] = self.__adj[n1][n2] = edge
             self.__edges = edge.get_id() + 1
-        # if only one is there and it doesn't point at itself, or none are
-        elif len(nodes) < 2 and n1 != n2:
-            raise KeyError("Missing node(s). Add all nodes before adding edges\
-                (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1.get_id(), n2.get_id()))
+        except KeyError as ke:
+            raise KeyError("At least node {0} missing. Add all nodes before\
+                     adding edges.".format(ke))
+        ## retrieving nodes
+        #nodes = self.retrieve_nodes_from_id(n1.get_id(), n2.get_id())
+        ## if both nodes already there
+        #if len(nodes) == 2:
+        #    self.__adj[nodes[1]][nodes[0]] = self.__adj[nodes[0]][nodes[1]]\
+        #            = edge
+        #    self.__edges = edge.get_id() + 1
+        ## if only one is there and it doesn't point at itself, or none are
+        #elif len(nodes) < 2 and n1 != n2:
+        #    raise KeyError("Missing node(s). Add all nodes before adding edges\
+        #        (nodes = {0}, n1 = {1}, n2 = {2})".format(nodes, n1.get_id(), n2.get_id()))
 
     def get_name(self):
         "Donne le nom du graphe."
@@ -92,6 +100,39 @@ class Graph(object):
                 break
 
         return min_tree
+
+    def plot_graph(self):
+        "Representation graphique du graphe avec Matplotlib."
+
+        import matplotlib.pyplot as plt
+        from matplotlib.collections import LineCollection
+
+        fig = plt.figure()
+        ax = fig.add_subplot(111)
+
+        # Plot nodes
+        nodes = self.get_nodes()
+        try:
+            x = [node.get_data()[0] for node in nodes]
+            y = [node.get_data()[1] for node in nodes]
+
+            # Plot edges
+            edges = self.get_edges()
+            edge_pos = np.asarray([(e.get_nodes()[0].get_data(),
+                e.get_nodes()[1].get_data()) for e in edges])
+            edge_collection = LineCollection(edge_pos, linewidth=1.5,
+                    antialiased=True, colors=(.8, .8, .8), alpha=.75, zorder=0)
+            ax.add_collection(edge_collection)
+            ax.scatter(x, y, s=35, c='r', antialiased=True, alpha=.75, zorder=1)
+            ax.set_xlim(min(x) - 10, max(x) + 10)
+            ax.set_ylim(min(y) - 10, max(y) + 10)
+
+            plt.ion()
+            plt.show()
+            plt.pause(0.001)
+        except TypeError:
+            print "Cannot display graph without node coordinates."
+        return
 
     def __repr__(self):
         name = self.get_name()

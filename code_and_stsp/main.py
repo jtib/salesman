@@ -47,6 +47,9 @@ if __name__ == "__main__":
             # edge id
             G.add_edge(Edge(iden = e, node1=n1, node2=n2, weight=w))
 
+        G.plot_graph()
+
         # Kruskal's algorithm
         min_tree = G.kruskal()
         print min_tree
+        min_tree.plot_graph()
