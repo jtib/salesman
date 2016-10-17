@@ -12,23 +12,14 @@ class TestEdge(unittest.TestCase):
     """
 
     def setUp(self):
-        node1 = Node()
-        node2 = Node()
-        self.__edge = Edge(node1,node2)
-
-    def test_count(self):
-        "Verifie l'incrementation du compteur"
-        prev_edge_count = self.__edge.get_count()
-        node1 = Node()
-        node2 = Node()
-        edge2 = Edge(node1, node2)
-        self.assertEqual(prev_edge_count + 1, self.__edge.get_count())
+        node1 = Node(1)
+        node2 = Node(2)
+        self.__edge = Edge(1,node1,node2)
 
     def test_init(self):
-        node = Node()
+        node = Node(1)
         with self.assertRaises(EdgeException):
-            edge = Edge(node,node,1)
-
+            edge = Edge(2,node,node,1)
 
 
 if __name__ == "__main__":
