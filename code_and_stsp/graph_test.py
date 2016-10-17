@@ -46,6 +46,15 @@ class TestGraph(unittest.TestCase):
         self.__graph.add_node(node2)
         self.__graph.add_edge(Edge(0,node1, node2))
         self.assertEqual(self.__graph.get_nb_edges(),1)
+        
+    def test_weight(self):
+        "Teste le calcul du poids du graphe"
+        node1 = Node(1)
+        node2 = Node(2)
+        self.__graph.add_node(node1)
+        self.__graph.add_node(node2)
+        self.__graph.add_edge(Edge(0, node1, node2,1))
+        self.assertEqual(self.__graph.tree_weight(),1)
 
 
 
