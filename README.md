@@ -47,3 +47,10 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 * utiliser les nodes et pas les id dans les aretes (nooon...)
 * mettre des décorateurs
 * inclure dossier stsp dans .zip
+
+##### Lab 3
+* référence dans le livre de Cormen : sections 21.3 et 23
+* question théorique sur la complexité : raisonnement par induction
+* pseudo-code fourni incomplet, ne construit pas l'arbre au fil des itérations
+* possible de modifier les objets Node directement ou implémenter une classe basée sur les nœuds avec de nouveaux attributs
+* comparer Kruskal avec Prim (et corriger le problème avec l'ajout des arêtes noté dans les commentaires du lab 2)

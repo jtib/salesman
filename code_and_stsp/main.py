@@ -36,7 +36,8 @@ if __name__ == "__main__":
 
         # add edges to graph
         nb_edges = sum(xrange(dim))
-        for (e, edge) in zip(xrange(nb_edges), edges):
+        K=0
+        for edge in edges:
             # nodes
             (nid1, nid2) = (edge[0], edge[1])
             node_list = G.retrieve_nodes_from_id(nid1, nid2)
@@ -45,11 +46,16 @@ if __name__ == "__main__":
             # weight
             w = edge[2]
             # edge id
-            G.add_edge(Edge(iden = e, node1=n1, node2=n2, weight=w))
+            # add edge if not circular
+            if not(w==0 and n1==n2):
+                G.add_edge(Edge(iden = K, node1=n1, node2=n2, weight=w))
+                K += 1
 
+        print G
         G.plot_graph()
+        #G.plot_graph()
 
         # Kruskal's algorithm
-        min_tree = G.kruskal()
-        print min_tree
-        min_tree.plot_graph()
+        #min_tree = G.kruskal()
+        #print min_tree
+        #min_tree.plot_graph()

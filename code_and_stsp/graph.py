@@ -27,9 +27,11 @@ class Graph(object):
         try:
             # checking if both nodes are there
             nodes = [self.__adj[n1], self.__adj[n2]]
-            # adding the new edge
-            self.__adj[n2][n1] = self.__adj[n1][n2] = edge
-            self.__edges = edge.get_id() + 1
+            # checking if edge not already there
+            if n2 not in self.__adj[n1]:
+                # adding the new edge
+                self.__adj[n1][n2] = self.__adj[n2][n1] = edge
+                self.__edges += 1
         # if one (or both) node(s) missing
         except KeyError as ke:
             raise KeyError("At least node {0} missing. Add all nodes before\
