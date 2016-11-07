@@ -35,6 +35,7 @@ complet à chaque fois... donc mieux d'avoir un compteur)
 doivent être résolus, donc ne pas s'occuper des coordonnées (qui ne servent
 éventuellement que pr l'affichage)
 * add_edge et adjacence (matrice) (étendre classe edge)
+* Lien du rapport : [https://www.overleaf.com/6323837bfwnry](https://www.overleaf.com/6323837bfwnry)
 
 ##### Lab 2
 * respecter le guide de style
@@ -47,6 +48,7 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 * utiliser les nodes et pas les id dans les aretes (nooon...)
 * mettre des décorateurs
 * inclure dossier stsp dans .zip
+* Lien du rapport : [https://www.overleaf.com/6629553cxwsxs](https://www.overleaf.com/6629553cxwsxs)
 
 ##### Lab 3
 * référence dans le livre de Cormen : sections 21.3 et 23
@@ -54,3 +56,4 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 * pseudo-code fourni incomplet, ne construit pas l'arbre au fil des itérations
 * possible de modifier les objets Node directement ou implémenter une classe basée sur les nœuds avec de nouveaux attributs
 * comparer Kruskal avec Prim (et corriger le problème avec l'ajout des arêtes noté dans les commentaires du lab 2)
+* Lien du rapport : [https://www.overleaf.com/6821243wdvbygyrhwkz#/](https://www.overleaf.com/6821243wdvbygyrhwkz#/)
