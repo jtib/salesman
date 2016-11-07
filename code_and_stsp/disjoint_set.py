@@ -37,7 +37,8 @@ class DisjointSet(object):
 
     def union_sets(self,dset):
         """Realise l'union de deux sous ensembles disjoints par leurs racines.
-        Renvoie True si l'union est possible, False si les deux ensembles sont connexes"""
+        Renvoie True si l'union est possible, False si les deux ensembles sont connexes
+        """
         root1 = self.find_root()
         root2 = dset.find_root()
 
@@ -46,6 +47,27 @@ class DisjointSet(object):
             return True
         else:
             return False
+
+    def rank_union(self,dset):
+        """Realise l'union par le rang de deux sous-ensembles disjoints.
+        Renvoie True si l'union est possible, False si les deux ensembles sont connexes
+        """
+        root1 = self.find_root()
+        root2 = dset.find_root()
+
+        # si les ensembles sont connexes
+        if root1 == root2:
+            return False
+        # sinon
+        if root1.rank > root2.rank:
+            root2.parent = root1
+        elif root1.rank < root2.rank:
+            root1.parent = root2
+        elif root1.rank == root2.rank:
+            root1.parent = root2
+            root2.rank = 1
+        return True
+
 
     def find_root(self):
         "Renvoie la racine de l'ensemble"

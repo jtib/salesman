@@ -3,10 +3,11 @@ class Node(object):
     Une classe generique pour representer les noeuds d'un graphe.
     """
 
-    def __init__(self, iden, name='Sans nom', data=None):
+    def __init__(self, iden, name='Sans nom', data=None, rank=0):
         self.__name = name
         self.__data = data
         self.__id = iden
+        self.__rank = rank
 
     def get_name(self):
         "Donne le nom du noeud."
@@ -19,6 +20,14 @@ class Node(object):
     def get_data(self):
         "Donne les donnees contenues dans le noeud."
         return self.__data
+
+    @property
+    def rank(self):
+        return self.__rank
+
+    @rank.setter
+    def rank(self, value):
+        self.__rank = value
 
     def __repr__(self):
         id = self.get_id()
