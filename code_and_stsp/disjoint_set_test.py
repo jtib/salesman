@@ -22,14 +22,6 @@ class TestDisjointSet(unittest.TestCase):
             self.__disjoint_set.node = n
 
 
-    def test_set_parent(self):
-        "Verifie qu'on ne peut pas modifier un parent existant"
-        n1 = Node(iden = 1)
-        self.__disjoint_set.parent = n1
-        n2 = Node(iden = 2)
-        with self.assertRaises(AttributeError):
-            self.__disjoint_set.parent = n2
-
     def test_union_true(self):
         "Verifie qu'on peut joindre deux sets non connexes."
         self.assertEqual(self.__disjoint_set.union_sets(self.__other_disjoint_set), True)
