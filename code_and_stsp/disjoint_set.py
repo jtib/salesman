@@ -29,10 +29,8 @@ class DisjointSet(object):
     @parent.setter
     def parent(self,val):
         "Modification du parent"
-        if self.__parent == None:
-            self.__parent = val
-        else:
-            raise AttributeError("Utiliser la methode union_sets pour relier deux ensembles disjoints.")
+        self.__parent = val
+
 
 
     def union_sets(self,dset):
@@ -59,13 +57,36 @@ class DisjointSet(object):
         if root1 == root2:
             return False
         # sinon
-        if root1.rank > root2.rank:
+        if root1.node.rank > root2.node.rank:
             root2.parent = root1
-        elif root1.rank < root2.rank:
+        elif root1.node.rank < root2.node.rank:
             root1.parent = root2
-        elif root1.rank == root2.rank:
+        elif root1.node.rank == root2.node.rank:
             root1.parent = root2
-            root2.rank = 1
+            root2.node.rank += 1
+        return True
+
+    def rank_compressed_union(self,dset):
+        """Realise l'union par le rang de deux sous-ensembles disjoints avec compression des chemins.
+        Renvoie True si l'union est possible, False si les deux ensembles sont connexes
+        """
+        root1 = self.__parent if (self.__parent is not None) else self
+        root2 = dset.__parent if (dset.parent is not None) else dset
+
+        # si les ensembles sont connexes
+        if root1 == root2:
+            return False
+        # sinon
+        if root1.node.rank > root2.node.rank:
+            root2.parent = root1
+            dset.parent = root1
+        elif root1.node.rank < root2.node.rank:
+            root1.parent  = root2
+            self.__parent = root2
+        elif root1.node.rank == root2.node.rank:
+            root1.parent = root2
+            self.__parent = root2
+            root2.node.rank += 1
         return True
 
 
@@ -106,5 +127,15 @@ if __name__ == '__main__':
 
     # On unit deux ensembles disjoints et on verifie le booleen de sortie
     print set1.union_sets(set3)
+    # On affiche les trois sous-ensembles initiaux
+    print set1, set2, set3
+
+    set1 = DisjointSet(node1)
+    set2 = DisjointSet(node2)
+    set3 = DisjointSet(node3)
+
+    print set1.rank_compressed_union(set2)
+    print set1.rank_compressed_union(set3)
+
     # On affiche les trois sous-ensembles initiaux
     print set1, set2, set3
