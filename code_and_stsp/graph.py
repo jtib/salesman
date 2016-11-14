@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 from node import Node
 from disjoint_set import DisjointSet
@@ -97,7 +98,7 @@ class Graph(object):
                 break
 
         return min_tree
-        
+
         def kruskal_pp(self):
         """Retourne un arbre de recouvrement minimal s'il existe,
         avec utilisation du rang et de la compression de chemins"""
@@ -135,7 +136,7 @@ class Graph(object):
 
     def prim(self):
         "Algorithme de Prim"
-        min_tree = Graphe('Arbre Minimal')
+        min_tree = Graph('Arbre Minimal')
 
         disj_sets = {}
 
@@ -144,7 +145,7 @@ class Graph(object):
         # File de priorite
         Q = PriorityMinQueue()
         for node in nodes:
-            u.key = maxsize
+            node.key = maxsize
             disj_sets[node] = DisjointSet(node)
             Q.enqueue(node)
 
@@ -155,10 +156,16 @@ class Graph(object):
 
         while not Q.is_empty():
             u = Q.dequeue()
+            min_tree.add_node(u)
             for v in [v for v in self.__adj[u].keys() if v in Q\
-                    and self.__adj[u][v] < v.key]:
+                    and self.__adj[u][v].get_weight() < v.key]:
                 disj_sets[v].parent = disj_sets[u]
-                v.key = self.__adj[u][v]
+                v.key = self.__adj[u][v].get_weight()
+                min_tree.add_node(v)
+                min_tree.add_edge(self.__adj[u][v])
+
+        return min_tree
+
 
     def plot_graph(self):
         "Representation graphique du graphe avec Matplotlib."

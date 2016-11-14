@@ -1,3 +1,4 @@
+import logging
 from node import Node
 
 class DisjointSet(object):
