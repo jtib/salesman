@@ -2,8 +2,8 @@ import logging
 import numpy as np
 from node import Node
 from disjoint_set import DisjointSet
-from queue import PriorityMinQueue
 from sys import maxsize
+import heapq
 
 class Graph(object):
     """
@@ -148,7 +148,6 @@ class Graph(object):
         # File de priorite
         Q = PriorityMinQueue()
         for node in nodes:
-            node.key = maxsize
             disj_sets[node] = DisjointSet(node)
             Q.enqueue(node)
 
