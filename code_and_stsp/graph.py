@@ -99,7 +99,7 @@ class Graph(object):
 
         return min_tree
 
-        def kruskal_pp(self):
+    def kruskal_pp(self):
         """Retourne un arbre de recouvrement minimal s'il existe,
         avec utilisation du rang et de la compression de chemins"""
 
@@ -229,4 +229,4 @@ if __name__ == '__main__':
         G.add_node(n2)
         count += 1
         G.add_edge(Edge(k, n1, n2, weight=42))
-  print G
+    print G
