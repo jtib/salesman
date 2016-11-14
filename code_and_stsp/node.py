@@ -29,6 +29,20 @@ class Node(object):
     def rank(self, value):
         self.__rank = value
 
+    @property
+    def key(self):
+        return self.__key
+
+    @key.setter
+    def key(self, value):
+        self.__key = value
+
+    def __lt__(self, other_node):
+        return self.key < other_node.key
+
+    def __le__(self, other_node):
+        return self.key <= other_node.key
+
     def __repr__(self):
         id = self.get_id()
         name = self.get_name()

@@ -28,7 +28,7 @@ class Edge(object):
         return self.__weight <= other_edge.get_weight()
 
     def __lt__(self, other_edge):
-        "Inferieur ou egal : comparaison en fonction du poids"
+        "Strictement inferieur : comparaison en fonction du poids"
         return self.__weight < other_edge.get_weight()
 
     def __repr__(self):

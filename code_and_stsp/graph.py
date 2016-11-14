@@ -1,6 +1,8 @@
 import numpy as np
 from node import Node
 from disjoint_set import DisjointSet
+from queue import PriorityMinQueue
+from sys import maxsize
 
 class Graph(object):
     """
@@ -96,6 +98,33 @@ class Graph(object):
 
         return min_tree
 
+    def prim(self):
+        "Algorithme de Prim"
+        min_tree = Graphe('Arbre Minimal')
+
+        disj_sets = {}
+
+        nodes = self.get_nodes()
+        nb_nodes = self.get_nb_nodes
+        # File de priorite
+        Q = PriorityMinQueue()
+        for node in nodes:
+            u.key = maxsize
+            disj_sets[node] = DisjointSet(node)
+            Q.enqueue(node)
+
+        # Choix de la racine (n'importe quel noeud)
+        r = nodes[0]
+
+        r.key = 0
+
+        while not Q.is_empty():
+            u = Q.dequeue()
+            for v in [v for v in self.__adj[u].keys() if v in Q\
+                    and self.__adj[u][v] < v.key]:
+                disj_sets[v].parent = disj_sets[u]
+                v.key = self.__adj[u][v]
+
     def plot_graph(self):
         "Representation graphique du graphe avec Matplotlib."
 
@@ -155,4 +184,4 @@ if __name__ == '__main__':
         G.add_node(n2)
         count += 1
         G.add_edge(Edge(k, n1, n2, weight=42))
-    print G
+  print G

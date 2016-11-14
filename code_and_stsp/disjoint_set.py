@@ -31,8 +31,6 @@ class DisjointSet(object):
         "Modification du parent"
         self.__parent = val
 
-
-
     def union_sets(self,dset):
         """Realise l'union de deux sous ensembles disjoints par leurs racines.
         Renvoie True si l'union est possible, False si les deux ensembles sont connexes
