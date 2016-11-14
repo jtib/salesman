@@ -31,6 +31,14 @@ class DisjointSet(object):
         "Modification du parent"
         self.__parent = val
 
+    @property
+    def rank(self):
+        return self.__rank
+
+    @rank.setter
+    def rank(self, value):
+        self.__rank = value
+
     def union_sets(self,dset):
         """Realise l'union de deux sous ensembles disjoints par leurs racines.
         Renvoie True si l'union est possible, False si les deux ensembles sont connexes
@@ -44,26 +52,6 @@ class DisjointSet(object):
         else:
             return False
 
-    def rank_union(self,dset):
-        """Realise l'union par le rang de deux sous-ensembles disjoints.
-        Renvoie True si l'union est possible, False si les deux ensembles sont connexes
-        """
-        root1 = self.find_root()
-        root2 = dset.find_root()
-
-        # si les ensembles sont connexes
-        if root1 == root2:
-            return False
-        # sinon
-        if root1.node.rank > root2.node.rank:
-            root2.parent = root1
-        elif root1.node.rank < root2.node.rank:
-            root1.parent = root2
-        elif root1.node.rank == root2.node.rank:
-            root1.parent = root2
-            root2.node.rank += 1
-        return True
-
     def rank_compressed_union(self,dset):
         """Realise l'union par le rang de deux sous-ensembles disjoints avec compression des chemins.
         Renvoie True si l'union est possible, False si les deux ensembles sont connexes
@@ -75,16 +63,16 @@ class DisjointSet(object):
         if root1 == root2:
             return False
         # sinon
-        if root1.node.rank > root2.node.rank:
+        if root1.rank > root2.rank:
             root2.parent = root1
             dset.parent = root1
-        elif root1.node.rank < root2.node.rank:
+        elif root1.rank < root2.rank:
             root1.parent  = root2
             self.__parent = root2
-        elif root1.node.rank == root2.node.rank:
+        elif root1.rank == root2.rank:
             root1.parent = root2
             self.__parent = root2
-            root2.node.rank += 1
+            root2.rank += 1
         return True
 
 

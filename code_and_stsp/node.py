@@ -22,14 +22,6 @@ class Node(object):
         return self.__data
 
     @property
-    def rank(self):
-        return self.__rank
-
-    @rank.setter
-    def rank(self, value):
-        self.__rank = value
-
-    @property
     def key(self):
         return self.__key
 
