@@ -88,7 +88,7 @@ class DisjointSet(object):
 
     def __repr__(self):
         "Affiche les identifiants des noeuds jusqu'a la racine"
-        s = '%d' % self.__node.get_id()
+        s = '%d' % self.__node.id
         if self.__parent == None:
             return s + " = racine."
         s += ' --> ' + str(self.__parent)

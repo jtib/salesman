@@ -23,14 +23,14 @@ class TestGraph(unittest.TestCase):
             self.__graph.add_edge(Edge(1,node1, node2))
 
 
-    def test_get_nodes(self):
-        "Verifie qu'on obtient bien la liste vide avec get_nodes sur un graphe vide"
-        self.assertEqual(self.__graph.get_nodes(),[])
+    def test_nodes(self):
+        "Verifie qu'on obtient bien la liste vide avec nodes sur un graphe vide"
+        self.assertEqual(self.__graph.nodes,[])
 
 
-    def test_get_edges(self):
-        "Verifie qu'on obtient bien la liste vide avec get_edges sur un graphe vide"
-        self.assertEqual(self.__graph.get_edges(), [])
+    def test_edges(self):
+        "Verifie qu'on obtient bien la liste vide avec edges sur un graphe vide"
+        self.assertEqual(self.__graph.edges, [])
 
     def test_nb_nodes(self):
         "Teste le nombre de noeuds"
@@ -46,7 +46,7 @@ class TestGraph(unittest.TestCase):
         self.__graph.add_node(node2)
         self.__graph.add_edge(Edge(0,node1, node2))
         self.assertEqual(self.__graph.get_nb_edges(),1)
-        
+
     def test_weight(self):
         "Teste le calcul du poids du graphe"
         node1 = Node(1)

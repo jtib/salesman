@@ -11,15 +11,16 @@ class Node(object):
         self.__id = iden
         self.__key = key
 
-    def get_name(self):
-        "Donne le nom du noeud."
+    @property
+    def name(self):
         return self.__name
 
-    def get_id(self):
-        "Donne le numero d'identification du noeud."
+    @property
+    def id(self):
         return self.__id
 
-    def get_data(self):
+    @property
+    def data(self):
         "Donne les donnees contenues dans le noeud."
         return self.__data
 
@@ -38,9 +39,9 @@ class Node(object):
         return self.key <= other_node.key
 
     def __repr__(self):
-        id = self.get_id()
-        name = self.get_name()
-        data = self.get_data()
+        id = self.id
+        name = self.name
+        data = self.data
         key = self.key
         s  = '%s (id %d)' % (name, id)
         s += ' (donnees : ' + repr(data) + ')'

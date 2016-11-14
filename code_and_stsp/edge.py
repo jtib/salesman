@@ -4,39 +4,42 @@ class Edge(object):
     """
 
     def __init__(self, iden, node1, node2, weight = 0):
-      if node1.get_id() == node2.get_id() and weight != 0:
+      if node1.id == node2.id and weight != 0:
           raise EdgeException('Une arete ne peut pas pointer sur elle-meme.')
       else:
         self.__nodes = (node1, node2)
         self.__weight = weight
         self.__id = iden
 
-    def get_nodes(self):
+    @property
+    def nodes(self):
         "Donne les noeuds."
         return self.__nodes
 
-    def get_weight(self):
+    @property
+    def weight(self):
         "Donne le poids."
         return self.__weight
 
-    def get_id(self):
+    @property
+    def id(self):
         "Donne l'identifiant."
         return self.__id
 
     def __le__(self, other_edge):
         "Inferieur ou egal : comparaison en fonction du poids"
-        return self.__weight <= other_edge.get_weight()
+        return self.__weight <= other_edge.weight
 
     def __lt__(self, other_edge):
         "Strictement inferieur : comparaison en fonction du poids"
-        return self.__weight < other_edge.get_weight()
+        return self.__weight < other_edge.weight
 
     def __repr__(self):
-        id = self.get_id()
-        weight = self.get_weight()
-        nodes = self.get_nodes()
+        id = self.id
+        weight = self.weight
+        nodes = self.nodes
         s  = 'Arete {i} (poids : {p}) '.format(i = id, p = weight)
-        s += '({0} <---> {1})'.format(nodes[0].get_id(), nodes[1].get_id())
+        s += '({0} <---> {1})'.format(nodes[0].id, nodes[1].id)
         return s
 
 class EdgeException(Exception):

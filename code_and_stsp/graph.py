@@ -22,11 +22,11 @@ class Graph(object):
     def retrieve_nodes_from_id(self, *ids):
         "Renvoie les noeuds a partir de leurs ids."
         return [node for node in self.__adj.keys()
-                if node.get_id() in ids]
+                if node.id in ids]
 
     def add_edge(self, edge):
         "Ajoute une arete au graphe."
-        (n1, n2) = edge.get_nodes()
+        (n1, n2) = edge.nodes
         try:
             # checking if both nodes are there
             nodes = [self.__adj[n1], self.__adj[n2]]
@@ -40,31 +40,34 @@ class Graph(object):
             raise KeyError("At least node {0} missing. Add all nodes before\
                      adding edges.".format(ke))
 
-    def get_name(self):
+    @property
+    def name(self):
         "Donne le nom du graphe."
         return self.__name
 
-    def get_nodes(self):
+    @property
+    def nodes(self):
         "Donne la liste des noeuds du graphe."
         return self.__adj.keys()
 
     def get_nb_nodes(self):
         "Donne le nombre de noeuds du graphe."
-        return len(self.get_nodes())
+        return len(self.nodes)
 
-    def get_edges(self):
+    @property
+    def edges(self):
         "Donne la liste des aretes du graphe."
         edges = []
-        edges.extend([v for n in self.get_nodes() for v in self.__adj[n].values()])
+        edges.extend([v for n in self.nodes for v in self.__adj[n].values()])
         return list(set(edges)) # removing doubles
 
     def get_nb_edges(self):
         "Donne le nombre d'aretes du graphe."
-        return self.__edges
+        return len(self.edges)
 
     def tree_weight(self):
         "Calcule le poids de l'arbre."
-        return sum([e.get_weight() for e in self.get_edges()])
+        return sum([e.weight for e in self.edges])
 
     def kruskal(self):
         "Retourne un arbre de recouvrement minimal s'il existe"
@@ -72,20 +75,20 @@ class Graph(object):
 
         disj_sets = {}
 
-        nodes = self.get_nodes()
+        nodes = self.nodes
         # Le nombre de noeuds du graphe
-        nb_nodes = self.get_nb_nodes
+        nb_nodes = self.get_nb_nodes()
         # On remplit le dictionnaire de disjoint_sets
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
 
-        edges = self.get_edges()
+        edges = self.edges
         # La liste est triee selon la comparaison implementee dans edge
         edges.sort()
 
         # Construction de l'arbre
         for edge in edges:
-            (node1,node2) = edge.get_nodes()
+            (node1,node2) = edge.nodes
 
             # Si l'union des deux disjoint_sets est reussie
             if disj_sets[node1].union_sets(disj_sets[node2]):
@@ -107,20 +110,20 @@ class Graph(object):
 
         disj_sets = {}
 
-        nodes = self.get_nodes()
+        nodes = self.nodes
         # Le nombre de noeuds du graphe
-        nb_nodes = self.get_nb_nodes
+        nb_nodes = self.get_nb_nodes()
         # On remplit le dictionnaire de disjoint_sets
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
 
-        edges = self.get_edges()
+        edges = self.edges
         # La liste est triee selon la comparaison implementee dans edge
         edges.sort()
 
         # Construction de l'arbre
         for edge in edges:
-            (node1, node2) = edge.get_nodes()
+            (node1, node2) = edge.nodes
 
             # Si l'union des deux disjoint_sets est reussie
             if disj_sets[node1].rank_compressed_union(disj_sets[node2]):
@@ -143,8 +146,8 @@ class Graph(object):
 
         disj_sets = {}
 
-        nodes = self.get_nodes()
-        nb_nodes = self.get_nb_nodes
+        nodes = self.nodes
+        nb_nodes = self.get_nb_nodes()
 
         # Choix de la racine (n'importe quel noeud)
         r = nodes[0]
@@ -163,9 +166,9 @@ class Graph(object):
                 p = disj_sets[u].parent.node
                 min_tree.add_edge(self.__adj[p][u])
             for v in [w for w in self.__adj[u].keys() if w in Q\
-                    and self.__adj[u][w].get_weight() < w.key]:
+                    and self.__adj[u][w].weight < w.key]:
                 disj_sets[v].parent = disj_sets[u]
-                v.key = self.__adj[u][v].get_weight()
+                v.key = self.__adj[u][v].weight
 
         return min_tree
 
@@ -180,15 +183,15 @@ class Graph(object):
         ax = fig.add_subplot(111)
 
         # Plot nodes
-        nodes = self.get_nodes()
+        nodes = self.nodes
         try:
-            x = [node.get_data()[0] for node in nodes]
-            y = [node.get_data()[1] for node in nodes]
+            x = [node.data[0] for node in nodes]
+            y = [node.data[1] for node in nodes]
 
             # Plot edges
-            edges = self.get_edges()
-            edge_pos = np.asarray([(e.get_nodes()[0].get_data(),
-                e.get_nodes()[1].get_data()) for e in edges])
+            edges = self.edges
+            edge_pos = np.asarray([(e.nodes[0].data,
+                e.nodes[1].data) for e in edges])
             edge_collection = LineCollection(edge_pos, linewidth=1.5,
                     antialiased=True, colors=(.8, .8, .8), alpha=.75, zorder=0)
             ax.add_collection(edge_collection)
@@ -204,13 +207,13 @@ class Graph(object):
         return
 
     def __repr__(self):
-        name = self.get_name()
+        name = self.name
         nb_nodes = self.get_nb_nodes()
         nb_edges = self.get_nb_edges()
         s = 'Graphe %s comprenant %d noeuds et %d aretes' % (name, nb_nodes, nb_edges)
-        for node in self.get_nodes():
+        for node in self.nodes:
             s += '\n  ' + repr(node)
-        for edge in self.get_edges():
+        for edge in self.edges:
             s += '\n  ' + repr(edge)
         s += '\n' + 'Poids total : ' + repr(self.tree_weight())
         return s
