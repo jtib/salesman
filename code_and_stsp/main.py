@@ -67,9 +67,9 @@ if __name__ == "__main__":
         # min_tree.plot_graph()
 
         # Kruskal improved
-        #logging.info('Kruskal improved')
-        #min_tree_pp = G.kruskal_pp()
-        #print min_tree_pp
+        logging.info('Kruskal improved')
+        min_tree_pp = G.kruskal_pp()
+        print min_tree_pp
         # min_tree_pp.plot_graph()
 
         # Prim's algorithm

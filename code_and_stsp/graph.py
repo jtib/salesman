@@ -158,8 +158,11 @@ class Graph(object):
         while len(Q) > 0:
             u = heappop(Q)[1]
             min_tree.add_node(u)
-            for v in [v for v in self.__adj[u].keys() if v in Q\
-                    and self.__adj[u][v].get_weight() < v.key]:
+            logging.debug('Devrait entrer dans la boucle apres ceci')
+
+            for v in [w for w in self.__adj[u].keys() for item in Q if w==item[1]\
+                    and self.__adj[u][w].get_weight() < w.key]:
+                logging.debug('Entree dans la boucle avec %s', v)
                 disj_sets[v].parent = disj_sets[u]
                 v.key = self.__adj[u][v].get_weight()
                 min_tree.add_node(v)
