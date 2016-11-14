@@ -153,20 +153,19 @@ class Graph(object):
         Q = []
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
-            heappush(Q, (node.key, node))
+            heappush(Q, node)
 
         while len(Q) > 0:
-            u = heappop(Q)[1]
+            u = heappop(Q)
+            logging.debug("Noeud ajoute a l'arbre minimal : %s", u)
             min_tree.add_node(u)
-            logging.debug('Devrait entrer dans la boucle apres ceci')
-
-            for v in [w for w in self.__adj[u].keys() for item in Q if w==item[1]\
+            if u.key is not 0:
+                p = disj_sets[u].parent.node
+                min_tree.add_edge(self.__adj[p][u])
+            for v in [w for w in self.__adj[u].keys() if w in Q\
                     and self.__adj[u][w].get_weight() < w.key]:
-                logging.debug('Entree dans la boucle avec %s', v)
                 disj_sets[v].parent = disj_sets[u]
                 v.key = self.__adj[u][v].get_weight()
-                min_tree.add_node(v)
-                min_tree.add_edge(self.__adj[u][v])
 
         return min_tree
 

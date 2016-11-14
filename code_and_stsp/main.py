@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
         logging.info('Fichier lu, graphe cree')
 
-        print G
+        #print G
         G.plot_graph()
 
         # Kruskal's algorithm
