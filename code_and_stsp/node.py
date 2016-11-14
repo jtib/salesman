@@ -41,8 +41,10 @@ class Node(object):
         id = self.get_id()
         name = self.get_name()
         data = self.get_data()
+        key = self.key
         s  = '%s (id %d)' % (name, id)
-        s += ' (donnees: ' + repr(data) + ')'
+        s += ' (donnees : ' + repr(data) + ')'
+        s += ' (clef : ' + repr(key) + ')'
         return s
 
 

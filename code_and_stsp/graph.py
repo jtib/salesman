@@ -3,7 +3,7 @@ import numpy as np
 from node import Node
 from disjoint_set import DisjointSet
 from sys import maxsize
-import heapq
+from heapq import heappush, heappop
 
 class Graph(object):
     """
@@ -145,19 +145,18 @@ class Graph(object):
 
         nodes = self.get_nodes()
         nb_nodes = self.get_nb_nodes
-        # File de priorite
-        Q = PriorityMinQueue()
-        for node in nodes:
-            disj_sets[node] = DisjointSet(node)
-            Q.enqueue(node)
 
         # Choix de la racine (n'importe quel noeud)
         r = nodes[0]
-
         r.key = 0
+        # File de priorite
+        Q = []
+        for node in nodes:
+            disj_sets[node] = DisjointSet(node)
+            heappush(Q, (node.key, node))
 
-        while not Q.is_empty():
-            u = Q.dequeue()
+        while len(Q) > 0:
+            u = heappop(Q)[1]
             min_tree.add_node(u)
             for v in [v for v in self.__adj[u].keys() if v in Q\
                     and self.__adj[u][v].get_weight() < v.key]:

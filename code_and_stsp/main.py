@@ -61,15 +61,15 @@ if __name__ == "__main__":
         G.plot_graph()
 
         # Kruskal's algorithm
-        logging.info("Debut de l'algorithme de Kruskal")
-        min_tree = G.kruskal()
-        print min_tree
+        #logging.info("Debut de l'algorithme de Kruskal")
+        #min_tree = G.kruskal()
+        #print min_tree
         # min_tree.plot_graph()
 
         # Kruskal improved
-        logging.info('Kruskal improved')
-        min_tree_pp = G.kruskal_pp()
-        print min_tree_pp
+        #logging.info('Kruskal improved')
+        #min_tree_pp = G.kruskal_pp()
+        #print min_tree_pp
         # min_tree_pp.plot_graph()
 
         # Prim's algorithm
