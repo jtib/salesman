@@ -126,8 +126,11 @@ class Graph(object):
             if disj_sets[node1].rank_compressed_union(disj_sets[node2]):
                 # On complete l'arbre minimal
                 min_tree.add_node(node1)
+                logging.debug('Ajout de %s', node1)
                 min_tree.add_node(node2)
+                logging.debug('Ajout de %s', node2)
                 min_tree.add_edge(edge)
+                logging.debug('Ajout de %s', edge)
             # Si tous les noeuds sont dans min_tree, c'est que l'arbre est fini
             if min_tree.get_nb_nodes() == nb_nodes:
                 break

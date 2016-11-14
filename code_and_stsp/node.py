@@ -1,12 +1,15 @@
+from sys import maxsize
+
 class Node(object):
     """
     Une classe generique pour representer les noeuds d'un graphe.
     """
 
-    def __init__(self, iden, name='Sans nom', data=None):
+    def __init__(self, iden, name='Sans nom', data=None, key=maxsize):
         self.__name = name
         self.__data = data
         self.__id = iden
+        self.__key = key
 
     def get_name(self):
         "Donne le nom du noeud."

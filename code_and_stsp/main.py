@@ -1,11 +1,15 @@
 if __name__ == "__main__":
 
     import sys
+    import logging
 
     from node import Node
     from edge import Edge
     from graph import Graph
     import read_stsp as rs
+
+    logging.basicConfig(filename='logfile.log', level=logging.DEBUG)
+    logging.info('Debut')
 
     finstance = sys.argv[1]
 
@@ -51,11 +55,27 @@ if __name__ == "__main__":
                 G.add_edge(Edge(iden = K, node1=n1, node2=n2, weight=w))
                 K += 1
 
+        logging.info('Fichier lu, graphe cree')
+
         print G
         G.plot_graph()
-        #G.plot_graph()
 
         # Kruskal's algorithm
-        #min_tree = G.kruskal()
-        #print min_tree
-        #min_tree.plot_graph()
+        logging.info("Debut de l'algorithme de Kruskal")
+        min_tree = G.kruskal()
+        print min_tree
+        # min_tree.plot_graph()
+
+        # Kruskal improved
+        logging.info('Kruskal improved')
+        min_tree_pp = G.kruskal_pp()
+        print min_tree_pp
+        # min_tree_pp.plot_graph()
+
+        # Prim's algorithm
+        logging.info("Debut de Prim")
+        min_tree_prim = G.prim()
+        print min_tree_prim
+        # min_tree_prim.plot_graph()
+
+        logging.info('Fin')

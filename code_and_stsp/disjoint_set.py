@@ -76,7 +76,6 @@ class DisjointSet(object):
             root2.rank += 1
         return True
 
-
     def find_root(self):
         "Renvoie la racine de l'ensemble"
         # Si l'element courant est la racine
