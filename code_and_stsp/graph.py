@@ -97,6 +97,41 @@ class Graph(object):
                 break
 
         return min_tree
+        
+        def kruskal_pp(self):
+        """Retourne un arbre de recouvrement minimal s'il existe,
+        avec utilisation du rang et de la compression de chemins"""
+
+        min_tree = Graph('Arbre Minimal')
+
+        disj_sets = {}
+
+        nodes = self.get_nodes()
+        # Le nombre de noeuds du graphe
+        nb_nodes = self.get_nb_nodes
+        # On remplit le dictionnaire de disjoint_sets
+        for node in nodes:
+            disj_sets[node] = DisjointSet(node)
+
+        edges = self.get_edges()
+        # La liste est triee selon la comparaison implementee dans edge
+        edges.sort()
+
+        # Construction de l'arbre
+        for edge in edges:
+            (node1, node2) = edge.get_nodes()
+
+            # Si l'union des deux disjoint_sets est reussie
+            if disj_sets[node1].rank_compressed_union(disj_sets[node2]):
+                # On complete l'arbre minimal
+                min_tree.add_node(node1)
+                min_tree.add_node(node2)
+                min_tree.add_edge(edge)
+            # Si tous les noeuds sont dans min_tree, c'est que l'arbre est fini
+            if min_tree.get_nb_nodes() == nb_nodes:
+                break
+
+        return min_tree
 
     def prim(self):
         "Algorithme de Prim"
