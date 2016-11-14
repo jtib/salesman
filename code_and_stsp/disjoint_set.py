@@ -11,6 +11,7 @@ class DisjointSet(object):
         # Le noeud est une racine par defaut
         # Le parent est de type disjoint set
         self.__parent = None
+        self.__rank = 0
 
     @property
     def node(self):
@@ -57,8 +58,9 @@ class DisjointSet(object):
         """Realise l'union par le rang de deux sous-ensembles disjoints avec compression des chemins.
         Renvoie True si l'union est possible, False si les deux ensembles sont connexes
         """
-        root1 = self.__parent if (self.__parent is not None) else self
-        root2 = dset.__parent if (dset.parent is not None) else dset
+
+        root1 = self.find_root()
+        root2 = dset.find_root()
 
         # si les ensembles sont connexes
         if root1 == root2:
@@ -68,7 +70,7 @@ class DisjointSet(object):
             root2.parent = root1
             dset.parent = root1
         elif root1.rank < root2.rank:
-            root1.parent  = root2
+            root1.parent = root2
             self.__parent = root2
         elif root1.rank == root2.rank:
             root1.parent = root2
