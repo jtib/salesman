@@ -157,30 +157,31 @@ class Graph(object):
 
         nodes = self.nodes
 
-        # Choix de la racine (n'importe quel noeud)
-        r = nodes[0]
-
         # File de priorite
         Q = []
 
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
-            heappush(Q, node)
+            heappush(Q, disj_sets[node])
 
-        disj_sets[r].key = 0
+        # Choix de la racine (n'importe quel set)
+        r = heappop(Q)
+        r.key = 0
+        heappush(Q, r)
 
         while len(Q) > 0:
-            u = heappop(Q)
+            u_set = heappop(Q)
+            u = u_set.node
             logging.debug("Noeud ajoute a l'arbre minimal : %s", u)
             min_tree.add_node(u)
 
-            if disj_sets[u].key is not 0:
-                p = disj_sets[u].parent.node
+            if u_set.key is not 0:
+                p = u_set.parent.node
                 min_tree.add_edge(self.__adj[p][u])
 
-            for v in [w for w in self.__adj[u].keys() if w in Q\
+            for v in [w for w in self.__adj[u].keys() if disj_sets[w] in Q\
                     and self.__adj[u][w].weight < disj_sets[w].key]:
-                disj_sets[v].parent = disj_sets[u]
+                disj_sets[v].parent = u_set
                 disj_sets[v].key = self.__adj[u][v].weight
 
         return min_tree
