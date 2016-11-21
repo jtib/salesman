@@ -172,7 +172,6 @@ class Graph(object):
 
         return min_tree
 
-
     def plot_graph(self):
         "Representation graphique du graphe avec Matplotlib."
 
