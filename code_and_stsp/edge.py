@@ -42,6 +42,7 @@ class Edge(object):
         s += '({0} <---> {1})'.format(nodes[0].id, nodes[1].id)
         return s
 
+
 class EdgeException(Exception):
     def __init__(self, reason):
         self.__reason = reason
