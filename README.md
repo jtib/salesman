@@ -57,3 +57,16 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 * possible de modifier les objets Node directement ou implémenter une classe basée sur les nœuds avec de nouveaux attributs
 * comparer Kruskal avec Prim (et corriger le problème avec l'ajout des arêtes noté dans les commentaires du lab 2)
 * Lien du rapport : [https://www.overleaf.com/6821243wdvbygyrhwkz#/](https://www.overleaf.com/6821243wdvbygyrhwkz#/)
+
+##### Lab 4
+* alternatives conseillées : depth-first search itérative en gardant la trace de l'ordre suivi
+* ajouter chaque nœud dans le graphe
+* ajouter chaque arête entre 2 voisins
+* Kruskal ou Prim : passer tous les nœuds comme source pour trouver la meilleure
+* dans le rapport :
+
+| Instance | Kruskal | Source | Prim | Source | Écart à optimal (cf. site) |
+| -------- | ------- | ------ | ---- | ------ | -------------------------- |
+| bayg29.tsp | poids | 55 | poids | 55 | écart |
+
+

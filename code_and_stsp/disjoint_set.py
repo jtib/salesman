@@ -1,4 +1,5 @@
 import logging
+from sys import maxsize
 from node import Node
 
 class DisjointSet(object):
@@ -6,12 +7,13 @@ class DisjointSet(object):
     Classe pour representer un sous-arbre dans un ensemble disjoint
     """
 
-    def __init__(self, node):
+    def __init__(self, node, key=maxsize):
         self.__node = node
         # Le noeud est une racine par defaut
         # Le parent est de type disjoint set
         self.__parent = None
         self.__rank = 0
+        self.__key = key
 
     @property
     def node(self):
@@ -40,6 +42,20 @@ class DisjointSet(object):
     @rank.setter
     def rank(self, value):
         self.__rank = value
+
+    @property
+    def key(self):
+        return self.__key
+
+    @key.setter
+    def key(self, value):
+        self.__key = value
+
+    def __lt__(self, other_set):
+        return self.key < other_set.key
+
+    def __le__(self, other_set):
+        return self.key <= other_set.key
 
     def union_sets(self,dset):
         """Realise l'union de deux sous ensembles disjoints par leurs racines.
@@ -89,6 +105,8 @@ class DisjointSet(object):
     def __repr__(self):
         "Affiche les identifiants des noeuds jusqu'a la racine"
         s = '%d' % self.__node.id
+        key = self.__key
+        s += ' (clef : ' + repr(key) + ')'
         if self.__parent == None:
             return s + " = racine."
         s += ' --> ' + str(self.__parent)
