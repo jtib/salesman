@@ -76,13 +76,16 @@ class Graph(object):
         disj_sets = {}
 
         nodes = self.nodes
+        
         # Le nombre de noeuds du graphe
         nb_nodes = self.get_nb_nodes()
+        
         # On remplit le dictionnaire de disjoint_sets
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
 
         edges = self.edges
+        
         # La liste est triee selon la comparaison implementee dans edge
         edges.sort()
 
@@ -96,6 +99,7 @@ class Graph(object):
                 min_tree.add_node(node1)
                 min_tree.add_node(node2)
                 min_tree.add_edge(edge)
+                
             # Si tous les noeuds sont dans min_tree, c'est que l'arbre est fini
             if min_tree.get_nb_nodes() == nb_nodes:
                 break
@@ -111,13 +115,16 @@ class Graph(object):
         disj_sets = {}
 
         nodes = self.nodes
+        
         # Le nombre de noeuds du graphe
         nb_nodes = self.get_nb_nodes()
+        
         # On remplit le dictionnaire de disjoint_sets
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
 
         edges = self.edges
+        
         # La liste est triee selon la comparaison implementee dans edge
         edges.sort()
 
@@ -134,6 +141,7 @@ class Graph(object):
                 logging.debug('Ajout de %s', node2)
                 min_tree.add_edge(edge)
                 logging.debug('Ajout de %s', edge)
+                
             # Si tous les noeuds sont dans min_tree, c'est que l'arbre est fini
             if min_tree.get_nb_nodes() == nb_nodes:
                 break
@@ -142,6 +150,7 @@ class Graph(object):
 
     def prim(self):
         "Algorithme de Prim"
+        
         min_tree = Graph('Arbre Minimal')
 
         disj_sets = {}
@@ -152,8 +161,10 @@ class Graph(object):
         # Choix de la racine (n'importe quel noeud)
         r = nodes[0]
         r.key = 0
+        
         # File de priorite
         Q = []
+        
         for node in nodes:
             disj_sets[node] = DisjointSet(node)
             heappush(Q, node)
@@ -162,9 +173,11 @@ class Graph(object):
             u = heappop(Q)
             logging.debug("Noeud ajoute a l'arbre minimal : %s", u)
             min_tree.add_node(u)
+            
             if u.key is not 0:
                 p = disj_sets[u].parent.node
                 min_tree.add_edge(self.__adj[p][u])
+                
             for v in [w for w in self.__adj[u].keys() if w in Q\
                     and self.__adj[u][w].weight < w.key]:
                 disj_sets[v].parent = disj_sets[u]
@@ -183,6 +196,7 @@ class Graph(object):
 
         # Plot nodes
         nodes = self.nodes
+        
         try:
             x = [node.data[0] for node in nodes]
             y = [node.data[1] for node in nodes]
@@ -210,8 +224,10 @@ class Graph(object):
         nb_nodes = self.get_nb_nodes()
         nb_edges = self.get_nb_edges()
         s = 'Graphe %s comprenant %d noeuds et %d aretes' % (name, nb_nodes, nb_edges)
+        
         for node in self.nodes:
             s += '\n  ' + repr(node)
+            
         for edge in self.edges:
             s += '\n  ' + repr(edge)
         s += '\n' + 'Poids total : ' + repr(self.tree_weight())
@@ -221,8 +237,10 @@ class Graph(object):
 if __name__ == '__main__':
     from node import Node
     from edge import Edge
+    
     G = Graph(name='Graphe test')
     count = 0
+    
     for k in range(5):
         n1 = Node(iden=count, name='test %d' % count)
         G.add_node(n1)
