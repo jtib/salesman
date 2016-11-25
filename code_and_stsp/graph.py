@@ -1,6 +1,7 @@
 import logging
 import numpy as np
 from node import Node
+from edge import Edge
 from disjoint_set import DisjointSet
 from sys import maxsize
 from heapq import heappush, heappop
@@ -60,6 +61,11 @@ class Graph(object):
         edges = []
         edges.extend([v for n in self.nodes for v in self.__adj[n].values()])
         return list(set(edges)) # removing doubles
+
+    @property
+    def adj(self):
+        "Retourne la liste d'adjacence"
+        return self.__adj
 
     def get_nb_edges(self):
         "Donne le nombre d'aretes du graphe."
@@ -148,13 +154,11 @@ class Graph(object):
 
         return min_tree
 
-    def prim(self):
+    def prim(self, root = "default"):
         "Algorithme de Prim"
 
         min_tree = Graph('Arbre Minimal')
-
         disj_sets = {}
-
         nodes = self.nodes
 
         # File de priorite
@@ -165,7 +169,11 @@ class Graph(object):
             heappush(Q, disj_sets[node])
 
         # Choix de la racine (n'importe quel set)
-        r = heappop(Q)
+        if root == "default":
+            r = heappop(Q)
+        else:
+            r = disj_sets[root]
+
         r.key = 0
         heappush(Q, r)
 
@@ -185,6 +193,73 @@ class Graph(object):
                 disj_sets[v].key = self.__adj[u][v].weight
 
         return min_tree
+
+
+    def pre_order_traversal(self, root, original_graph):
+        """Parcours en pre-ordre retournant la tournee correspondante.
+        Attention, la methode ne va fonctionner qu'avec des arbres"""
+
+        # Definition d'une liste que l'on va utiliser comme une pile
+        nodes_stack = []
+
+        # Definition du graphe de tournee
+        tour_graph = Graph("Tournee approchee")
+
+        #Initialisation
+        node = root
+        tour_graph.add_node(node)
+        logging.debug("Noeud ajoute a la tournee minimale : %s", node)
+        count = 0
+        sons = self.__adj[node].keys()
+        logging.debug("  Fils du noeud courant : %s", sons)
+
+        # Definition d'un dictionnaire pour savoir qui a deja ete visite
+        visited = {node_visit: False for node_visit in self.nodes}
+        visited[node] = True
+
+        # On empile les fils
+        nodes_stack.extend(sons)
+        nb_nodes = self.get_nb_edges()
+
+        # Parcours iteratif : tant que la pile est non vide
+        while nodes_stack:
+
+            #On depile le prochain noeud et on le marque visite
+            next_node = nodes_stack.pop()
+            visited[next_node] = True
+
+            # On l'ajoute a la tournee, ainsi que l'arete cree
+            tour_graph.add_node(next_node)
+            logging.debug("Noeud ajoute a la tournee minimale : %s", next_node)
+            edge = original_graph.adj[node][next_node]
+            tour_graph.add_edge(edge)
+
+            # On empile les fils du noeud
+            sons = [son for son in self.__adj[next_node].keys() if not visited[son]]
+            logging.debug("  Fils du noeud courant : %s", sons)
+            nodes_stack.extend(sons)
+            node = next_node
+            #count += 1
+
+        # Il reste a ajouter le dernier noeud et boucler la boucle
+        edge = Edge(count, node, root)
+        tour_graph.add_edge(edge)
+
+        return tour_graph
+
+    def rsl(self,root,algo):
+        "Algorithme de Rosenkrantz, Stearns et Lewis"
+
+        # Calcul d'un arbre de recouvrement minimal
+        if algo == "prim":
+            min_tree = self.prim(root)
+        elif algo == "kruskal":
+            min_tree = self.kruskal_pp()
+
+        # Exploration de l'arbre en pre-ordre
+        min_tour = min_tree.pre_order_traversal(root,self)
+
+        return min_tour
 
     def plot_graph(self):
         "Representation graphique du graphe avec Matplotlib."
@@ -240,6 +315,18 @@ if __name__ == '__main__':
     from edge import Edge
 
     G = Graph(name='Graphe test')
+    count = 0
+
+    for k in range(5):
+        n1 = Node(iden=count, name='test %d' % count)
+        G.add_node(n1)
+        count += 1
+        n2 = Node(iden=count, name='test %d' % count)
+        G.add_node(n2)
+        count += 1
+        G.add_edge(Edge(k, n1, n2, weight=42))
+    print G
+
     count = 0
 
     for k in range(5):
