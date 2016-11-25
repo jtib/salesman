@@ -66,16 +66,22 @@ if __name__ == "__main__":
         #print min_tree
         # min_tree.plot_graph()
 
-        # Kruskal improved
-        logging.info('Kruskal improved')
-        min_tree_pp = G.kruskal_pp()
-        print min_tree_pp
-        # min_tree_pp.plot_graph()
+        # # Kruskal improved
+        # logging.info('Kruskal improved')
+        # min_tree_pp = G.kruskal_pp()
+        # print min_tree_pp
+        # # min_tree_pp.plot_graph()
+        #
+        # # Prim's algorithm
+        # logging.info("Debut de Prim")
+        # min_tree_prim = G.prim()
+        # print min_tree_prim
+        # # min_tree_prim.plot_graph()
 
-        # Prim's algorithm
-        logging.info("Debut de Prim")
-        min_tree_prim = G.prim()
-        print min_tree_prim
-        # min_tree_prim.plot_graph()
+        #Algorithme RSL
+        logging.info("Debut de Rosenkrantz")
+        roots = G.nodes
+        min_tour = G.rsl(roots[0],"prim")
+        print min_tour.tree_weight()
 
         logging.info('Fin')
