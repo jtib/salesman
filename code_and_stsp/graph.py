@@ -194,7 +194,6 @@ class Graph(object):
 
         return min_tree
 
-
     def pre_order_traversal(self, root, original_graph):
         """Parcours en pre-ordre retournant la tournee correspondante.
         Attention, la methode ne va fonctionner qu'avec des arbres"""
@@ -209,7 +208,6 @@ class Graph(object):
         node = root
         tour_graph.add_node(node)
         logging.debug("Noeud ajoute a la tournee minimale : %s", node)
-        count = 0
         sons = self.__adj[node].keys()
         logging.debug("  Fils du noeud courant : %s", sons)
 
@@ -239,7 +237,6 @@ class Graph(object):
             logging.debug("  Fils du noeud courant : %s", sons)
             nodes_stack.extend(sons)
             node = next_node
-            #count += 1
 
         # Il reste a ajouter le dernier noeud et boucler la boucle
         edge = Edge(count, node, root)
