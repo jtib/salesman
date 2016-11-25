@@ -195,8 +195,7 @@ class Graph(object):
         return min_tree
 
     def pre_order_traversal(self, root, original_graph):
-        """Parcours en pre-ordre retournant la tournee correspondante.
-        Attention, la methode ne va fonctionner qu'avec des arbres"""
+        "Parcours en pre-ordre retournant la tournee correspondante."
 
         # Definition d'une liste que l'on va utiliser comme une pile
         nodes_stack = []
