@@ -272,15 +272,32 @@ class Graph(object):
         try:
             x = [node.data[0] for node in nodes]
             y = [node.data[1] for node in nodes]
+            z = [node.name for node in nodes]
 
             # Plot edges
             edges = self.edges
             edge_pos = np.asarray([(e.nodes[0].data,
                 e.nodes[1].data) for e in edges])
+            edge_weights = [e.weight for e in edges]
             edge_collection = LineCollection(edge_pos, linewidth=1.5,
                     antialiased=True, colors=(.8, .8, .8), alpha=.75, zorder=0)
             ax.add_collection(edge_collection)
+
+            # Affiche les noms des aretes
+            for N, Z in zip(edge_pos, edge_weights):
+                N0 = N[0]
+                N1 = N[1]
+                X = (N0[0]+N1[0])/2
+                Y = (N0[1]+N1[1])/2
+                ax.annotate('{}'.format(Z), xy=(X,Y), xytext=(-5,5),
+                        ha='right', textcoords='offset points')
+
             ax.scatter(x, y, s=35, c='r', antialiased=True, alpha=.75, zorder=1)
+            # Affiche les noms des noeuds
+            for X, Y, Z in zip(x, y, z):
+                ax.annotate('{}'.format(Z), xy=(X,Y), xytext=(-5,5),\
+                        ha='right', textcoords='offset points')
+
             ax.set_xlim(min(x) - 10, max(x) + 10)
             ax.set_ylim(min(y) - 10, max(y) + 10)
 

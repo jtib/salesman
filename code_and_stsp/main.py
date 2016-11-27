@@ -58,13 +58,13 @@ if __name__ == "__main__":
         logging.info('Fichier lu, graphe cree')
 
         #print G
-        G.plot_graph()
+        #G.plot_graph()
 
         # Kruskal's algorithm
         #logging.info("Debut de l'algorithme de Kruskal")
         #min_tree = G.kruskal()
         #print min_tree
-        # min_tree.plot_graph()
+        #min_tree.plot_graph()
 
         # # Kruskal improved
         # logging.info('Kruskal improved')
@@ -79,9 +79,9 @@ if __name__ == "__main__":
         # # min_tree_prim.plot_graph()
 
         #Algorithme RSL
-        logging.info("Debut de Rosenkrantz")
-        roots = G.nodes
-        min_tour = G.rsl(roots[0],"prim")
-        print min_tour.tree_weight()
+        #logging.info("Debut de Rosenkrantz")
+        #roots = G.nodes
+        #min_tour = G.rsl(roots[0],"prim")
+        #print min_tour.tree_weight()
 
         logging.info('Fin')
