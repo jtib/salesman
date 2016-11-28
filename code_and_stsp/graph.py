@@ -238,8 +238,7 @@ class Graph(object):
             node = next_node
 
         # Il reste a ajouter le dernier noeud et boucler la boucle
-        count = tour_graph.get_nb_edges() + 1
-        edge = Edge(count, node, root)
+        edge = original_graph.adj[node][root]
         tour_graph.add_edge(edge)
 
         return tour_graph
