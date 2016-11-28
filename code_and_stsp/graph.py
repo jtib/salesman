@@ -244,7 +244,34 @@ class Graph(object):
 
         return tour_graph
 
-    def rsl(self,root,algo):
+    def depth_first_traversal(self, root, original_graph):
+        "Parcours en profondeur retournant la tournee correspondante."
+
+        tour_graph = Graph("Graphe de tournee")
+        visited = {node_visited: False for node_visited in self.nodes}
+        v = root
+
+        S = []
+        S.append(v)
+        logging.debug("taille de la pile : %s",len(S))
+
+        while len(S) is not 0:
+            v_next = S.pop()
+            if not visited[v_next]:
+                visited[v_next] = True
+                tour_graph.add_node(v_next)
+                logging.debug("Noeud ajoute a la tournee minimale : %s", v_next)
+                if tour_graph.get_nb_nodes() is not 1:
+                    tour_graph.add_edge(original_graph.adj[v][v_next])
+                    logging.debug("Arete ajoutee a la tournee minimale : %s", original_graph.adj[v][v_next])
+                for w in [w for w in self.__adj[v_next].keys()]:
+                    S.append(w)
+                v = v_next
+
+        tour_graph.add_edge(original_graph.adj[root][v])
+        return tour_graph
+
+    def rsl(self,root,algo,explo):
         "Algorithme de Rosenkrantz, Stearns et Lewis"
 
         # Calcul d'un arbre de recouvrement minimal
@@ -254,7 +281,10 @@ class Graph(object):
             min_tree = self.kruskal_pp()
 
         # Exploration de l'arbre en pre-ordre
-        min_tour = min_tree.pre_order_traversal(root,self)
+        if explo == "bfs":
+            min_tour = min_tree.pre_order_traversal(root,self)
+        elif explo == "dfs":
+            min_tour = min_tree.depth_first_traversal(root,self)
 
         return min_tour
 
