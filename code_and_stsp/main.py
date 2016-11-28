@@ -57,27 +57,6 @@ if __name__ == "__main__":
 
         logging.info('Fichier lu, graphe cree')
 
-        #print G
-        #G.plot_graph()
-
-        # Kruskal's algorithm
-        #logging.info("Debut de l'algorithme de Kruskal")
-        #min_tree = G.kruskal()
-        #print min_tree
-        #min_tree.plot_graph()
-
-        # # Kruskal improved
-        # logging.info('Kruskal improved')
-        # min_tree_pp = G.kruskal_pp()
-        # print min_tree_pp
-        # # min_tree_pp.plot_graph()
-        #
-        # # Prim's algorithm
-        # logging.info("Debut de Prim")
-        # min_tree_prim = G.prim()
-        # print min_tree_prim
-        # # min_tree_prim.plot_graph()
-
         # Algorithme RSL
         logging.info("Debut de Rosenkrantz")
         roots = G.nodes
@@ -95,11 +74,14 @@ if __name__ == "__main__":
             min_tour_kruskal_bfs = G.rsl(roots[k],"kruskal","bfs")
             #print "Poids minimal (Kruskal, BFS, racine : {0}) : {1}".format(roots[k], min_tour_kruskal_bfs.tree_weight())
 
-            print "{instance},{source},{prim_dfs},{prim_bfs},{kruskal_dfs},{kruskal_bfs}".\
+            print "{instance},{source},{prim_bfs},{kruskal_bfs}".\
                 format(instance=header['NAME'], source=k,
-                    prim_dfs=min_tour_prim_dfs.tree_weight(),
                     prim_bfs=min_tour_prim_bfs.tree_weight(),
-                    kruskal_dfs=min_tour_kruskal_dfs.tree_weight(),
                     kruskal_bfs=min_tour_kruskal_bfs.tree_weight())
+
+            min_tour_prim_dfs.plot_graph()
+            min_tour_prim_bfs.plot_graph()
+            min_tour_kruskal_dfs.plot_graph()
+            min_tour_kruskal_bfs.plot_graph()
 
         logging.info('Fin')

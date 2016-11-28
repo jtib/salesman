@@ -256,7 +256,6 @@ class Graph(object):
         visited[v] = True
         node_list = []
         node_list.append(v)
-        #tour_graph.add_node(v)
 
         while len(S) is not 0:
             v = S.popleft()
@@ -264,9 +263,6 @@ class Graph(object):
             for w in neighbors:
                 visited[w] = True
                 node_list.append(w)
-                #tour_graph.add_node(w)
-                #tour_graph.add_edge(original_graph.adj[v_prev][w])
-                #v_prev = w
                 S.append(w)
 
         for k in xrange(len(node_list)-1):
@@ -274,7 +270,6 @@ class Graph(object):
             tour_graph.add_node(node_list[k+1])
             tour_graph.add_edge(original_graph.adj[node_list[k]][node_list[k+1]])
         tour_graph.add_edge(original_graph.adj[node_list[0]][node_list[-1]])
-        #tour_graph.add_edge(original_graph.adj[root][v_prev])
         return tour_graph
 
     def depth_first_traversal(self, root, original_graph):

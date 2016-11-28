@@ -1,3 +1,4 @@
 *.zip
 code_and_stsp/results/*
 *.log
+code_and_stsp/all_csv
