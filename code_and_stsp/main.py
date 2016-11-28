@@ -83,16 +83,23 @@ if __name__ == "__main__":
         roots = G.nodes
 
         for k in xrange(len(roots)):
-            min_tour = G.rsl(roots[k],"prim","dfs")
-            print "Poids minimal (Prim, DFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+            min_tour_prim_dfs = G.rsl(roots[k],"prim","dfs")
+            #print "Poids minimal (Prim, DFS, racine : {0}) : {1}".format(roots[k], min_tour_prim_dfs.tree_weight())
 
-            min_tour = G.rsl(roots[k],"prim","bfs")
-            print "Poids minimal (Prim, BFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+            min_tour_prim_bfs = G.rsl(roots[k],"prim","bfs")
+            #print "Poids minimal (Prim, BFS, racine : {0}) : {1}".format(roots[k], min_tour_prim_bfs.tree_weight())
 
-            min_tour = G.rsl(roots[k],"kruskal","dfs")
-            print "Poids minimal (Kruskal, DFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+            min_tour_kruskal_dfs = G.rsl(roots[k],"kruskal","dfs")
+            #print "Poids minimal (Kruskal, DFS, racine : {0}) : {1}".format(roots[k], min_tour_kruskal_dfs.tree_weight())
 
-            min_tour = G.rsl(roots[k],"kruskal","bfs")
-            print "Poids minimal (Kruskal, BFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+            min_tour_kruskal_bfs = G.rsl(roots[k],"kruskal","bfs")
+            #print "Poids minimal (Kruskal, BFS, racine : {0}) : {1}".format(roots[k], min_tour_kruskal_bfs.tree_weight())
+
+            print "{instance},{source},{prim_dfs},{prim_bfs},{kruskal_dfs},{kruskal_bfs}".\
+                format(instance=header['NAME'], source=k,
+                    prim_dfs=min_tour_prim_dfs.tree_weight(),
+                    prim_bfs=min_tour_prim_bfs.tree_weight(),
+                    kruskal_dfs=min_tour_kruskal_dfs.tree_weight(),
+                    kruskal_bfs=min_tour_kruskal_bfs.tree_weight())
 
         logging.info('Fin')

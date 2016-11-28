@@ -5,6 +5,7 @@ from edge import Edge
 from disjoint_set import DisjointSet
 from sys import maxsize
 from heapq import heappush, heappop
+from collections import deque
 
 class Graph(object):
     """
@@ -168,7 +169,7 @@ class Graph(object):
             disj_sets[node] = DisjointSet(node)
             heappush(Q, disj_sets[node])
 
-        # Choix de la racine (n'importe quel set)
+        # Choix de la racine
         if root == "default":
             r = heappop(Q)
         else:
@@ -243,6 +244,30 @@ class Graph(object):
 
         return tour_graph
 
+    def breadth_first_traversal(self, root, original_graph):
+        "Parcours en largeur retournant la tournee correspondante."
+
+        tour_graph = Graph("Graphe de tournee")
+        visited = {node_visited: False for node_visited in self.nodes}
+        v = root
+
+        S = deque()
+        S.append(v)
+        visited[v] = True
+        tour_graph.add_node(v)
+
+        while len(S) is not 0:
+            v_next = S.popleft()
+            neighbors = [w for w in self.__adj[v_next].keys() if not visited[w]]
+            for w in neighbors:
+                visited[w] = True
+                tour_graph.add_node(w)
+                tour_graph.add_edge(self.__adj[v_next][w])
+                S.append(w)
+
+        tour_graph.add_edge(original_graph.adj[root][v_next])
+        return tour_graph
+
     def depth_first_traversal(self, root, original_graph):
         "Parcours en profondeur retournant la tournee correspondante."
 
@@ -281,7 +306,7 @@ class Graph(object):
 
         # Exploration de l'arbre en pre-ordre
         if explo == "bfs":
-            min_tour = min_tree.pre_order_traversal(root,self)
+            min_tour = min_tree.breadth_first_traversal(root,self)
         elif explo == "dfs":
             min_tour = min_tree.depth_first_traversal(root,self)
 
