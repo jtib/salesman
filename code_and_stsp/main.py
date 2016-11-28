@@ -78,10 +78,10 @@ if __name__ == "__main__":
         # print min_tree_prim
         # # min_tree_prim.plot_graph()
 
-        #Algorithme RSL
-        #logging.info("Debut de Rosenkrantz")
-        #roots = G.nodes
-        #min_tour = G.rsl(roots[0],"prim")
-        #print min_tour.tree_weight()
+        # Algorithme RSL
+        logging.info("Debut de Rosenkrantz")
+        roots = G.nodes
+        min_tour = G.rsl(roots[0],"prim")
+        print min_tour.tree_weight()
 
         logging.info('Fin')

@@ -203,7 +203,7 @@ class Graph(object):
         # Definition du graphe de tournee
         tour_graph = Graph("Tournee approchee")
 
-        #Initialisation
+        # Initialisation
         node = root
         tour_graph.add_node(node)
         logging.debug("Noeud ajoute a la tournee minimale : %s", node)
@@ -221,7 +221,7 @@ class Graph(object):
         # Parcours iteratif : tant que la pile est non vide
         while nodes_stack:
 
-            #On depile le prochain noeud et on le marque visite
+            # On depile le prochain noeud et on le marque visite
             next_node = nodes_stack.pop()
             visited[next_node] = True
 
@@ -238,6 +238,7 @@ class Graph(object):
             node = next_node
 
         # Il reste a ajouter le dernier noeud et boucler la boucle
+        count = tour_graph.get_nb_edges() + 1
         edge = Edge(count, node, root)
         tour_graph.add_edge(edge)
 
