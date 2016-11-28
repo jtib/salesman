@@ -69,4 +69,4 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 | -------- | ------- | ------ | ---- | ------ | -------------------------- |
 | bayg29.tsp | poids | 55 | poids | 55 | écart |
 
-
+* site pour les poids optimaux : [http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/STSP.html](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/STSP.html)

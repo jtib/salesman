@@ -254,18 +254,27 @@ class Graph(object):
         S = deque()
         S.append(v)
         visited[v] = True
-        tour_graph.add_node(v)
+        node_list = []
+        node_list.append(v)
+        #tour_graph.add_node(v)
 
         while len(S) is not 0:
-            v_next = S.popleft()
-            neighbors = [w for w in self.__adj[v_next].keys() if not visited[w]]
+            v = S.popleft()
+            neighbors = [w for w in self.__adj[v].keys() if not visited[w]]
             for w in neighbors:
                 visited[w] = True
-                tour_graph.add_node(w)
-                tour_graph.add_edge(self.__adj[v_next][w])
+                node_list.append(w)
+                #tour_graph.add_node(w)
+                #tour_graph.add_edge(original_graph.adj[v_prev][w])
+                #v_prev = w
                 S.append(w)
 
-        tour_graph.add_edge(original_graph.adj[root][v_next])
+        for k in xrange(len(node_list)-1):
+            tour_graph.add_node(node_list[k])
+            tour_graph.add_node(node_list[k+1])
+            tour_graph.add_edge(original_graph.adj[node_list[k]][node_list[k+1]])
+        tour_graph.add_edge(original_graph.adj[node_list[0]][node_list[-1]])
+        #tour_graph.add_edge(original_graph.adj[root][v_prev])
         return tour_graph
 
     def depth_first_traversal(self, root, original_graph):
