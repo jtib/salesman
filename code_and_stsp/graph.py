@@ -173,6 +173,7 @@ class Graph(object):
             r = heappop(Q)
         else:
             r = disj_sets[root]
+            Q.remove(r)
 
         r.key = 0
         heappush(Q, r)

@@ -81,7 +81,18 @@ if __name__ == "__main__":
         # Algorithme RSL
         logging.info("Debut de Rosenkrantz")
         roots = G.nodes
-        min_tour = G.rsl(roots[0],"prim","dfs")
-        print min_tour.tree_weight()
+
+        for k in xrange(len(roots)):
+            min_tour = G.rsl(roots[k],"prim","dfs")
+            print "Poids minimal (Prim, DFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+
+            min_tour = G.rsl(roots[k],"prim","bfs")
+            print "Poids minimal (Prim, BFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+
+            min_tour = G.rsl(roots[k],"kruskal","dfs")
+            print "Poids minimal (Kruskal, DFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
+
+            min_tour = G.rsl(roots[k],"kruskal","bfs")
+            print "Poids minimal (Kruskal, BFS, racine : {0}) : {1}".format(roots[k], min_tour.tree_weight())
 
         logging.info('Fin')
