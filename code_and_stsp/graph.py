@@ -216,7 +216,6 @@ class Graph(object):
 
         # On empile les fils
         nodes_stack.extend(sons)
-        nb_nodes = self.get_nb_edges()
 
         # Parcours iteratif : tant que la pile est non vide
         while nodes_stack:
