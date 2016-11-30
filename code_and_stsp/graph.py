@@ -316,7 +316,7 @@ class Graph(object):
 
         return min_tour
 
-    def plot_graph(self):
+    def plot_graph(self, name='min_tour.png', save=False):
         "Representation graphique du graphe avec Matplotlib."
 
         import matplotlib.pyplot as plt
@@ -363,6 +363,10 @@ class Graph(object):
             plt.ion()
             plt.show()
             plt.pause(0.001)
+
+            if save:
+                filename = "figures/{0}".format(name)
+                plt.savefig(filename, bbox_inches='tight')
         except TypeError:
             print "Cannot display graph without node coordinates."
         return

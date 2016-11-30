@@ -2,6 +2,7 @@ if __name__ == "__main__":
 
     import sys
     import logging
+    import matplotlib.pyplot as plt
 
     from node import Node
     from edge import Edge
@@ -61,27 +62,50 @@ if __name__ == "__main__":
         logging.info("Debut de Rosenkrantz")
         roots = G.nodes
 
-        for k in xrange(len(roots)):
-            min_tour_prim_dfs = G.rsl(roots[k],"prim","dfs")
-            #print "Poids minimal (Prim, DFS, racine : {0}) : {1}".format(roots[k], min_tour_prim_dfs.tree_weight())
+        if "bayg29" in finstance:
+            min_tour = G.rsl(roots[14],"prim","dfs")
+            name = "bayg29_min_tour.png"
+        elif "bays29" in finstance:
+            min_tour = G.rsl(roots[23],"kruskal","dfs")
+            name = "bays29_min_tour.png"
+        elif "brazil58" in finstance:
+            min_tour = G.rsl(roots[42],"kruskal","dfs")
+            name = "brazil58_min_tour.png"
+        elif "brg180" in finstance:
+            min_tour = G.rsl(roots[2],"prim","dfs")
+            name = "brg180_min_tour.png"
+        elif "dantzig42" in finstance:
+            min_tour = G.rsl(roots[41],"prim","dfs")
+            name = "dantzig42_min_tour.png"
+        elif "fri26" in finstance:
+            min_tour = G.rsl(roots[25],"kruskal","dfs")
+            name = "fri26_min_tour.png"
+        elif "gr120" in finstance:
+            min_tour = G.rsl(roots[78],"kruskal","dfs")
+            name = "gr120_min_tour.png"
+        elif "gr17" in finstance:
+            min_tour = G.rsl(roots[1],"prim","dfs")
+            name = "gr17_min_tour.png"
+        elif "gr21" in finstance:
+            min_tour = G.rsl(roots[0],"kruskal","dfs")
+            name = "gr21_min_tour.png"
+        elif "gr24" in finstance:
+            min_tour = G.rsl(roots[14],"kruskal","dfs")
+            name = "gr24_min_tour.png"
+        elif "gr48" in finstance:
+            min_tour = G.rsl(roots[12],"kruskal","dfs")
+            name = "gr48_min_tour.png"
+        elif "hk48" in finstance:
+            min_tour = G.rsl(roots[6],"kruskal","dfs")
+            name = "hk48_min_tour.png"
+        elif "swiss42" in finstance:
+            min_tour = G.rsl(roots[29],"kruskal","dfs")
+            name = "swiss42_min_tour.png"
+        elif "pa561" in finstance:
+            min_tour = G.rsl(roots[0],"kruskal","dfs")
+            name = "pa561_min_tour.png"
 
-            min_tour_prim_bfs = G.rsl(roots[k],"prim","bfs")
-            #print "Poids minimal (Prim, BFS, racine : {0}) : {1}".format(roots[k], min_tour_prim_bfs.tree_weight())
-
-            min_tour_kruskal_dfs = G.rsl(roots[k],"kruskal","dfs")
-            #print "Poids minimal (Kruskal, DFS, racine : {0}) : {1}".format(roots[k], min_tour_kruskal_dfs.tree_weight())
-
-            min_tour_kruskal_bfs = G.rsl(roots[k],"kruskal","bfs")
-            #print "Poids minimal (Kruskal, BFS, racine : {0}) : {1}".format(roots[k], min_tour_kruskal_bfs.tree_weight())
-
-            print "{instance},{source},{prim_bfs},{kruskal_bfs}".\
-                format(instance=header['NAME'], source=k,
-                    prim_bfs=min_tour_prim_bfs.tree_weight(),
-                    kruskal_bfs=min_tour_kruskal_bfs.tree_weight())
-
-            min_tour_prim_dfs.plot_graph()
-            min_tour_prim_bfs.plot_graph()
-            min_tour_kruskal_dfs.plot_graph()
-            min_tour_kruskal_bfs.plot_graph()
+        print "Poids : {0}".format(min_tour.tree_weight())
+        min_tour.plot_graph(name=name,save=True)
 
         logging.info('Fin')
