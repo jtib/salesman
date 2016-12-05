@@ -1,0 +1,15 @@
+instance source prim/kruskal poids optimal écart
+bayg29 14 prim 2009 1610 399
+bays29 23 kruskal 2396 2020 376
+brazil58 11/42 kruskal 29031 25395 3636
+brg180 2 prim 16280 1950 14330 ??
+dantzig42 41 prim 884 699 185
+fri26 25 kruskal 1075 937 138
+gr120 78 kruskal 9611 6942 2669
+gr17 1 prim 2224 2085 139
+gr21 0 kruskal 3664 2707 957
+gr24 1/14 kruskal 1563 1272 291
+gr48 12 kruskal 6536 5046 1490
+hk48 6 kruskal 14503 11461 3042
+swiss42 29 kruskal 1587 1273 314
+pa561 0 kruskal 3882 2763 1119

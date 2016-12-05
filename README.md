@@ -70,3 +70,11 @@ ou ajouter attribut "parent" à la classe Node et lui ajouter ces mêmes méthod
 | bayg29.tsp | poids | 55 | poids | 55 | écart |
 
 * site pour les poids optimaux : [http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/STSP.html](http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/STSP.html)
+
+##### Lab 5
+* interface google maps : graphique, il suffit de cliquer
+* six nœuds
+* Kruskal ou Prim, peu importe
+* utiliser (comme d'habitude) un environnement virtuel pour ne pas avoir de problèmes avec les packages externes
+* _seul_ fichier à modifier : my\_tsp.py
+* résoudre avec Prim ou Kruskal pour tous les nœuds, puis prendre la meilleure tournée et la retourner
