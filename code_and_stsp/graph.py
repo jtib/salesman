@@ -196,54 +196,6 @@ class Graph(object):
 
         return min_tree
 
-    def pre_order_traversal(self, root, original_graph):
-        "Parcours en pre-ordre retournant la tournee correspondante."
-
-        # Definition d'une liste que l'on va utiliser comme une pile
-        nodes_stack = []
-
-        # Definition du graphe de tournee
-        tour_graph = Graph("Tournee approchee")
-
-        # Initialisation
-        node = root
-        tour_graph.add_node(node)
-        logging.debug("Noeud ajoute a la tournee minimale : %s", node)
-        sons = self.__adj[node].keys()
-        logging.debug("  Fils du noeud courant : %s", sons)
-
-        # Definition d'un dictionnaire pour savoir qui a deja ete visite
-        visited = {node_visit: False for node_visit in self.nodes}
-        visited[node] = True
-
-        # On empile les fils
-        nodes_stack.extend(sons)
-
-        # Parcours iteratif : tant que la pile est non vide
-        while nodes_stack:
-
-            # On depile le prochain noeud et on le marque visite
-            next_node = nodes_stack.pop()
-            visited[next_node] = True
-
-            # On l'ajoute a la tournee, ainsi que l'arete cree
-            tour_graph.add_node(next_node)
-            logging.debug("Noeud ajoute a la tournee minimale : %s", next_node)
-            edge = original_graph.adj[node][next_node]
-            tour_graph.add_edge(edge)
-
-            # On empile les fils du noeud
-            sons = [son for son in self.__adj[next_node].keys() if not visited[son]]
-            logging.debug("  Fils du noeud courant : %s", sons)
-            nodes_stack.extend(sons)
-            node = next_node
-
-        # Il reste a ajouter le dernier noeud et boucler la boucle
-        edge = original_graph.adj[node][root]
-        tour_graph.add_edge(edge)
-
-        return tour_graph
-
     def breadth_first_traversal(self, root, original_graph):
         "Parcours en largeur retournant la tournee correspondante."
 
@@ -285,18 +237,23 @@ class Graph(object):
 
         while len(S) is not 0:
             v_next = S.pop()
+
             if not visited[v_next]:
                 visited[v_next] = True
                 tour_graph.add_node(v_next)
                 logging.debug("Noeud ajoute a la tournee minimale : %s", v_next)
+
                 if tour_graph.get_nb_nodes() is not 1:
                     tour_graph.add_edge(original_graph.adj[v][v_next])
                     logging.debug("Arete ajoutee a la tournee minimale : %s", original_graph.adj[v][v_next])
+
                 for w in [w for w in self.__adj[v_next].keys()]:
                     S.append(w)
+
                 v = v_next
 
         tour_graph.add_edge(original_graph.adj[root][v])
+
         return tour_graph
 
     def rsl(self,root,algo,explo):
@@ -316,7 +273,7 @@ class Graph(object):
 
         return min_tour
 
-    def plot_graph(self, name='min_tour.png', save=False):
+    def plot_graph(self):
         "Representation graphique du graphe avec Matplotlib."
 
         import matplotlib.pyplot as plt
@@ -363,10 +320,6 @@ class Graph(object):
             plt.ion()
             plt.show()
             plt.pause(0.001)
-
-            if save:
-                filename = "figures/{0}".format(name)
-                plt.savefig(filename, bbox_inches='tight')
         except TypeError:
             print "Cannot display graph without node coordinates."
         return
