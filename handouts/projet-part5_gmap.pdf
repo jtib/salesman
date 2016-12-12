@@ -1,0 +1,251 @@
+%PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
+1 0 obj
+<< /F1 2 0 R /F2 3 0 R /F3 5 0 R >>
+endobj
+2 0 obj
+<< /BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font >>
+endobj
+3 0 obj
+<< /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font >>
+endobj
+4 0 obj
+<< /A << /S /URI /Type /Action /URI (mailto:dominique.orban@polymtl.ca) >> /Border [ 0 0 0 ] /Rect [ 153.7323 680.0236 232.0923 692.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+5 0 obj
+<< /BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F3 /Subtype /Type1 /Type /Font >>
+endobj
+6 0 obj
+<< /A << /S /URI /Type /Action /URI (http://www.python.org/dev/peps/pep-0008/) >> /Border [ 0 0 0 ] /Rect [ 194.8829 434.0236 382.7629 446.0236 ] /Subtype /Link /Type /Annot >>
+endobj
+7 0 obj
+<< /Annots [ 4 0 R 6 0 R ] /Contents 14 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 13 0 R /Resources << /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ] >> /Rotate 0 
+  /Trans <<  >> /Type /Page >>
+endobj
+8 0 obj
+<< /Outlines 10 0 R /PageLabels 15 0 R /PageMode /UseNone /Pages 13 0 R /Type /Catalog >>
+endobj
+9 0 obj
+<< /Author () /CreationDate (D:20161204111948+05'00') /Creator (\(unspecified\)) /Keywords () /Producer (ReportLab PDF Library - www.reportlab.com) /Subject (\(unspecified\)) 
+  /Title (MTH6412A : Projet voyageur de commerce \(phase 5\)) >>
+endobj
+10 0 obj
+<< /Count 2 /First 11 0 R /Last 12 0 R /Type /Outlines >>
+endobj
+11 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 635.0236 0 ] /Next 12 0 R /Parent 10 0 R /Title (Objectif) >>
+endobj
+12 0 obj
+<< /Dest [ 7 0 R /XYZ 62.69291 494.0236 0 ] /Parent 10 0 R /Prev 11 0 R /Title (Directives) >>
+endobj
+13 0 obj
+<< /Count 1 /Kids [ 7 0 R ] /Type /Pages >>
+endobj
+14 0 obj
+<< /Length 4066 >>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 28 Tm /F2 20 Tf 24 TL 32.10488 0 Td (MTH6412A : Projet voyageur de commerce) Tj T* 158.94 0 Td (\(phase 5\)) Tj T* -191.0449 0 Td ET
+Q
+Q
+q
+1 0 0 1 62.69291 692.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 48.03937 0 Td (Date:) Tj T* -48.03937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (Lundi 5 d\351cembre 2016) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 677.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 39.14937 0 Td (auteur:) Tj T* -39.14937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 .501961 rg (Dominique Orban) Tj  T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 662.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 11.92937 0 Td (pond\351ration:) Tj T* -11.92937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (15%, travail individuel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 647.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F2 10 Tf 12 TL 37.46937 0 Td (remise:) Tj T* -37.46937 0 Td ET
+Q
+Q
+q
+1 0 0 1 91.03937 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (le 19 d\351cembre 2016) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 614.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Objectif) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 536.0236 cm
+q
+BT 1 0 0 1 0 62 Tm .074431 Tw 12 TL /F1 10 Tf 0 0 0 rg (La derni\350re partie du projet consiste \340 mettre vos m\351thodes de r\351solution du TSP en oeuvre via les cartes) Tj T* 0 Tw .516651 Tw /F3 10 Tf 0 0 0 rg (Google Maps) Tj /F1 10 Tf 0 0 0 rg (. \300 l'aide du module Python pr\351sent\351 en s\351ance de laboratoire, cr\351ez vos propres tourn\351es) Tj T* 0 Tw 1.702651 Tw (optimales. Vous devrez cr\351er 3 graphes et chercher une tourn\351e optimale pour chacun d'entre eux \340) Tj T* 0 Tw .179986 Tw (l'aide de l'algorithme de RSL. Une tourn\351e devra \352tre situ\351e dans la r\351gion de Montr\351al, une tourn\351e sera) Tj T* 0 Tw .699988 Tw (situ\351e dans la r\351gion o\371 vous avez grandi et la derni\350re dans une r\351gion de votre de choix n'importe o\371) Tj T* 0 Tw (dans le monde. Chaque graphe devra comporter au moins 6 sommets.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 506.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.026235 Tw (Pour chaque tourn\351e, incluez une image de la tourn\351e superpos\351e \340 la carte Google, et donnez sa) Tj T* 0 Tw (longueur.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 473.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Directives) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 461.0236 cm
+Q
+q
+1 0 0 1 62.69291 461.0236 cm
+Q
+q
+1 0 0 1 62.69291 437.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .14061 Tw 12 TL /F1 10 Tf 0 0 0 rg (\311crire du code ) Tj /F2 10 Tf (lisible) Tj /F1 10 Tf (, a\351r\351 et comment\351. On se reportera aux lignes directrices pour la r\351daction de) Tj T* 0 Tw (code Python \340 l'adresse ) Tj 0 0 .501961 rg (http://www.python.org/dev/peps/pep-0008/) Tj 0 0 0 rg (.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 431.0236 cm
+Q
+q
+1 0 0 1 62.69291 407.0236 cm
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .305814 Tw (Utilisez les constructions de programmation orient\351e objet autant que possible. Le degr\351 d'utilisation) Tj T* 0 Tw (des constructions de programmation orient\351e objet entre en ligne de compte dans la notation.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+q
+1 0 0 1 62.69291 407.0236 cm
+Q
+ 
+endstream
+endobj
+15 0 obj
+<< /Nums [ 0 16 0 R ] >>
+endobj
+16 0 obj
+<< /S /D /St 1 >>
+endobj
+xref
+0 17
+0000000000 65535 f
+0000000075 00000 n
+0000000129 00000 n
+0000000239 00000 n
+0000000354 00000 n
+0000000542 00000 n
+0000000660 00000 n
+0000000855 00000 n
+0000001088 00000 n
+0000001196 00000 n
+0000001456 00000 n
+0000001533 00000 n
+0000001645 00000 n
+0000001759 00000 n
+0000001822 00000 n
+0000005945 00000 n
+0000005989 00000 n
+trailer
+<< /ID 
+ % ReportLab generated PDF document -- digest (http://www.reportlab.com)
+ [(\312\302\344`;\354\035\274f\354=*\330#\370i) (\312\302\344`;\354\035\274f\354=*\330#\370i)]
+ /Info 9 0 R /Root 8 0 R /Size 17 >>
+startxref
+6026
+%%EOF

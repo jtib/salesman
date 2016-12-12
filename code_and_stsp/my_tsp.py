@@ -86,5 +86,6 @@ def get_visit_order(geoPoints):
     order.append(order[0])
 
     logging.debug('order = %s', order)
+    logging.info('Approximate journey length : %s', best_tour.tree_weight())
 
     return order
